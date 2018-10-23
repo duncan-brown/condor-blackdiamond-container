@@ -1,0 +1,6 @@
+f.a @@PFN@@ ctime="2018-10-12T13:05:19.074127" checksum.timing="0.020" user="dbrown" checksum.type="sha256" checksum.value="ca8ed5988cb4ca0b67c45fd80fd17423aba2a066ca8a63a4e1c6adab067a3e92" size="28"
+f.b2 @@PFN@@ ctime="2018-10-23T17:34:03-04:00" checksum.timing="0.018" user="dbrown" checksum.type="sha256" checksum.value="c3932e4d11a1a0dbca0beb3e1c099defa60f73366b6a2c982af9d2a7029d1ca9" size="129"
+f.b1 @@PFN@@ ctime="2018-10-23T17:34:03-04:00" checksum.timing="0.018" user="dbrown" checksum.type="sha256" checksum.value="c3932e4d11a1a0dbca0beb3e1c099defa60f73366b6a2c982af9d2a7029d1ca9" size="129"
+f.c1 @@PFN@@ ctime="2018-10-23T17:37:58-04:00" checksum.timing="0.118" user="dbrown" checksum.type="sha256" checksum.value="f8aa544118327aa04c62f37f0fa7fa11dc02d5f49f142289139d514f9cdf8213" size="211"
+f.c2 @@PFN@@ ctime="2018-10-23T17:37:58-04:00" checksum.timing="0.113" user="dbrown" checksum.type="sha256" checksum.value="60092a38fffd27197d7c4506e1fd81cd50888c099b229e80edc68df03df70188" size="211"
+f.d @@PFN@@ ctime="2018-10-23T17:40:30-04:00" checksum.timing="0.018" user="dbrown" checksum.type="sha256" checksum.value="58f90ec934107c501757c2924bc278ab8626fd63287e4f988fab7bf9f4d92aad" size="565"

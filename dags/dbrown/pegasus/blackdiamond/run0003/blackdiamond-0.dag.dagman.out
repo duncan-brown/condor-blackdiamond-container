@@ -1,0 +1,751 @@
+10/23/18 17:30:11 ******************************************************
+10/23/18 17:30:11 ** condor_scheduniv_exec.16094806.0 (CONDOR_DAGMAN) STARTING UP
+10/23/18 17:30:11 ** /usr/bin/condor_dagman
+10/23/18 17:30:11 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+10/23/18 17:30:11 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+10/23/18 17:30:11 ** $CondorVersion: 8.6.7 Oct 29 2017 BuildID: 422776 $
+10/23/18 17:30:11 ** $CondorPlatform: x86_64_RedHat7 $
+10/23/18 17:30:11 ** PID = 369228
+10/23/18 17:30:11 ** Log last touched time unavailable (No such file or directory)
+10/23/18 17:30:11 ******************************************************
+10/23/18 17:30:11 Using config source: /etc/condor/condor_config
+10/23/18 17:30:11 Using local config sources: 
+10/23/18 17:30:11    /etc/condor/config.d/00_gwms_general.config
+10/23/18 17:30:11    /etc/condor/config.d/02_gwms_schedds.config
+10/23/18 17:30:11    /etc/condor/config.d/03_gwms_local.config
+10/23/18 17:30:11    /etc/condor/config.d/90_gwms_dns.config
+10/23/18 17:30:11    /etc/condor/config.d/92_flocking_osg_ligo.config
+10/23/18 17:30:11    /etc/condor/config.d/99_gratia-gwms.conf
+10/23/18 17:30:11    /etc/condor/config.d/99_gratia.conf
+10/23/18 17:30:11    /etc/condor/config.d/99_local.conf
+10/23/18 17:30:11    /etc/condor/condor_config.local
+10/23/18 17:30:11 config Macros = 181, Sorted = 181, StringBytes = 8363, TablesBytes = 6628
+10/23/18 17:30:11 CLASSAD_CACHING is ENABLED
+10/23/18 17:30:11 Daemon Log is logging: D_ALWAYS D_ERROR
+10/23/18 17:30:11 DaemonCore: No command port requested.
+10/23/18 17:30:11 DAGMAN_USE_STRICT setting: 1
+10/23/18 17:30:11 DAGMAN_VERBOSITY setting: 3
+10/23/18 17:30:11 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+10/23/18 17:30:11 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+10/23/18 17:30:11 DAGMAN_SUBMIT_DELAY setting: 0
+10/23/18 17:30:11 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+10/23/18 17:30:11 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+10/23/18 17:30:11 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 200
+10/23/18 17:30:11 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 10
+10/23/18 17:30:11 DAGMAN_DEFAULT_PRIORITY setting: 0
+10/23/18 17:30:11 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+10/23/18 17:30:11 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+10/23/18 17:30:11 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+10/23/18 17:30:11 DAGMAN_RETRY_NODE_FIRST setting: False
+10/23/18 17:30:11 DAGMAN_MAX_JOBS_IDLE setting: 5000
+10/23/18 17:30:11 DAGMAN_MAX_JOBS_SUBMITTED setting: 50000
+10/23/18 17:30:11 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+10/23/18 17:30:11 DAGMAN_MAX_POST_SCRIPTS setting: 20
+10/23/18 17:30:11 DAGMAN_MUNGE_NODE_NAMES setting: True
+10/23/18 17:30:11 DAGMAN_PROHIBIT_MULTI_JOBS setting: True
+10/23/18 17:30:11 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+10/23/18 17:30:11 DAGMAN_ALWAYS_RUN_POST setting: False
+10/23/18 17:30:11 DAGMAN_ABORT_DUPLICATES setting: True
+10/23/18 17:30:11 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+10/23/18 17:30:11 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+10/23/18 17:30:11 DAGMAN_AUTO_RESCUE setting: True
+10/23/18 17:30:11 DAGMAN_MAX_RESCUE_NUM setting: 100
+10/23/18 17:30:11 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+10/23/18 17:30:11 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+10/23/18 17:30:11 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+10/23/18 17:30:11 DAGMAN_MAX_JOB_HOLDS setting: 100
+10/23/18 17:30:11 DAGMAN_HOLD_CLAIM_TIME setting: 60
+10/23/18 17:30:11 ALL_DEBUG setting: 
+10/23/18 17:30:11 DAGMAN_DEBUG setting: 
+10/23/18 17:30:11 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+10/23/18 17:30:11 DAGMAN_REMOVE_NODE_JOBS setting: True
+10/23/18 17:30:11 argv[0] == "condor_scheduniv_exec.16094806.0"
+10/23/18 17:30:11 argv[1] == "-Lockfile"
+10/23/18 17:30:11 argv[2] == "blackdiamond-0.dag.lock"
+10/23/18 17:30:11 argv[3] == "-AutoRescue"
+10/23/18 17:30:11 argv[4] == "1"
+10/23/18 17:30:11 argv[5] == "-DoRescueFrom"
+10/23/18 17:30:11 argv[6] == "0"
+10/23/18 17:30:11 argv[7] == "-Dag"
+10/23/18 17:30:11 argv[8] == "blackdiamond-0.dag"
+10/23/18 17:30:11 argv[9] == "-MaxPre"
+10/23/18 17:30:11 argv[10] == "1"
+10/23/18 17:30:11 argv[11] == "-MaxPost"
+10/23/18 17:30:11 argv[12] == "20"
+10/23/18 17:30:11 argv[13] == "-Suppress_notification"
+10/23/18 17:30:11 argv[14] == "-CsdVersion"
+10/23/18 17:30:11 argv[15] == "$CondorVersion: 8.6.7 Oct 29 2017 BuildID: 422776 $"
+10/23/18 17:30:11 argv[16] == "-Dagman"
+10/23/18 17:30:11 argv[17] == "/bin/condor_dagman"
+10/23/18 17:30:17 WARNING: forward resolution of sugwg-osg.phy.syr.edu doesn't match 10.5.2.3!
+10/23/18 17:30:17 Workflow batch-name: <blackdiamond-0.dag+16094806>
+10/23/18 17:30:17 Workflow accounting_group: <>
+10/23/18 17:30:17 Workflow accounting_group_user: <>
+10/23/18 17:30:17 Warning: failed to get attribute DAGNodeName
+10/23/18 17:30:17 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+10/23/18 17:30:17 Default node log file is: </home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log>
+10/23/18 17:30:17 Note:  DAGMAN_MAX_JOBS_IDLE has been changed from the default setting; if your submit files create multiple procs, you should probably set DAGMAN_MAX_SUBMITS_PER_INTERVAL to 1
+10/23/18 17:30:17 DAG Lockfile will be written to blackdiamond-0.dag.lock
+10/23/18 17:30:17 DAG Input file is blackdiamond-0.dag
+10/23/18 17:30:17 Parsing 1 dagfiles
+10/23/18 17:30:17 Parsing blackdiamond-0.dag ...
+10/23/18 17:30:17 Dag contains 15 total jobs
+10/23/18 17:30:17 Sleeping for 3 seconds to ensure ProcessId uniqueness
+10/23/18 17:30:20 Bootstrapping...
+10/23/18 17:30:20 Number of pre-completed nodes: 0
+10/23/18 17:30:20 MultiLogFiles: truncating log file /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:30:20 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:30:20 Of 15 nodes total:
+10/23/18 17:30:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:30:20   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:30:20     0       0        0       0       1         14        0
+10/23/18 17:30:20 0 job proc(s) currently held
+10/23/18 17:30:20 Registering condor_event_timer...
+10/23/18 17:30:21 Submitting HTCondor Node create_dir_blackdiamond_0_local job(s)...
+10/23/18 17:30:21 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:30:21 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:30:21 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:30:21 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'create_dir_blackdiamond_0_local -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'create_dir_blackdiamond_0_local -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=800 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" ./create_dir_blackdiamond_0_local.sub
+10/23/18 17:30:21 From submit: Submitting job(s).
+10/23/18 17:30:21 From submit: 1 job(s) submitted to cluster 16094807.
+10/23/18 17:30:21 	assigned HTCondor ID (16094807.0.0)
+10/23/18 17:30:21 Just submitted 1 job this cycle...
+10/23/18 17:30:21 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:30:21 Reassigning the id of job create_dir_blackdiamond_0_local from (16094807.0.0) to (16094807.0.0)
+10/23/18 17:30:21 Event: ULOG_SUBMIT for HTCondor Node create_dir_blackdiamond_0_local (16094807.0.0) {10/23/18 17:30:21}
+10/23/18 17:30:21 Number of idle job procs: 1
+10/23/18 17:30:21 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:30:21 Of 15 nodes total:
+10/23/18 17:30:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:30:21   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:30:21     0       0        1       0       0         14        0
+10/23/18 17:30:21 0 job proc(s) currently held
+10/23/18 17:32:11 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:32:11 Event: ULOG_EXECUTE for HTCondor Node create_dir_blackdiamond_0_local (16094807.0.0) {10/23/18 17:32:06}
+10/23/18 17:32:11 Number of idle job procs: 0
+10/23/18 17:32:11 Event: ULOG_JOB_TERMINATED for HTCondor Node create_dir_blackdiamond_0_local (16094807.0.0) {10/23/18 17:32:08}
+10/23/18 17:32:11 Number of idle job procs: 0
+10/23/18 17:32:11 Node create_dir_blackdiamond_0_local job proc (16094807.0.0) completed successfully.
+10/23/18 17:32:11 Node create_dir_blackdiamond_0_local job completed
+10/23/18 17:32:11 Running POST script of Node create_dir_blackdiamond_0_local...
+10/23/18 17:32:11 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:32:11 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:32:11 Of 15 nodes total:
+10/23/18 17:32:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:32:11   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:32:11     0       0        0       1       0         14        0
+10/23/18 17:32:11 0 job proc(s) currently held
+10/23/18 17:32:11 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094807.0.0)
+10/23/18 17:32:21 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:32:21 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node create_dir_blackdiamond_0_local (16094807.0.0) {10/23/18 17:32:11}
+10/23/18 17:32:21 POST Script of node create_dir_blackdiamond_0_local completed successfully.
+10/23/18 17:32:21 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:32:21 Of 15 nodes total:
+10/23/18 17:32:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:32:21   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:32:21     1       0        0       0       2         12        0
+10/23/18 17:32:21 0 job proc(s) currently held
+10/23/18 17:32:31 Submitting HTCondor Node stage_in_local_local_1_0 job(s)...
+10/23/18 17:32:31 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:32:31 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:32:31 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:32:31 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_local_local_1_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_local_local_1_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=700 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"create_dir_blackdiamond_0_local" ./stage_in_local_local_1_0.sub
+10/23/18 17:32:31 From submit: Submitting job(s).
+10/23/18 17:32:31 From submit: 1 job(s) submitted to cluster 16094808.
+10/23/18 17:32:31 	assigned HTCondor ID (16094808.0.0)
+10/23/18 17:32:31 Submitting HTCondor Node stage_in_remote_local_0_0 job(s)...
+10/23/18 17:32:31 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:32:31 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:32:31 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:32:31 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_remote_local_0_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_remote_local_0_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=700 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"create_dir_blackdiamond_0_local" ./stage_in_remote_local_0_0.sub
+10/23/18 17:32:31 From submit: Submitting job(s).
+10/23/18 17:32:31 From submit: 1 job(s) submitted to cluster 16094809.
+10/23/18 17:32:31 	assigned HTCondor ID (16094809.0.0)
+10/23/18 17:32:31 Just submitted 2 jobs this cycle...
+10/23/18 17:32:31 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:32:31 Reassigning the id of job stage_in_local_local_1_0 from (16094808.0.0) to (16094808.0.0)
+10/23/18 17:32:31 Event: ULOG_SUBMIT for HTCondor Node stage_in_local_local_1_0 (16094808.0.0) {10/23/18 17:32:31}
+10/23/18 17:32:31 Number of idle job procs: 1
+10/23/18 17:32:31 Reassigning the id of job stage_in_remote_local_0_0 from (16094809.0.0) to (16094809.0.0)
+10/23/18 17:32:31 Event: ULOG_SUBMIT for HTCondor Node stage_in_remote_local_0_0 (16094809.0.0) {10/23/18 17:32:31}
+10/23/18 17:32:31 Number of idle job procs: 2
+10/23/18 17:32:31 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:32:31 Of 15 nodes total:
+10/23/18 17:32:31  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:32:31   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:32:31     1       0        2       0       0         12        0
+10/23/18 17:32:31 0 job proc(s) currently held
+10/23/18 17:33:21 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:33:21 Event: ULOG_EXECUTE for HTCondor Node stage_in_local_local_1_0 (16094808.0.0) {10/23/18 17:33:15}
+10/23/18 17:33:21 Number of idle job procs: 1
+10/23/18 17:33:21 Event: ULOG_EXECUTE for HTCondor Node stage_in_remote_local_0_0 (16094809.0.0) {10/23/18 17:33:15}
+10/23/18 17:33:21 Number of idle job procs: 0
+10/23/18 17:33:21 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094808.0.0) {10/23/18 17:33:15}
+10/23/18 17:33:21 Number of idle job procs: 0
+10/23/18 17:33:21 Node stage_in_local_local_1_0 job proc (16094808.0.0) failed with status 1.
+10/23/18 17:33:21 Node stage_in_local_local_1_0 job completed
+10/23/18 17:33:21 Running POST script of Node stage_in_local_local_1_0...
+10/23/18 17:33:21 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:33:21 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_remote_local_0_0 (16094809.0.0) {10/23/18 17:33:17}
+10/23/18 17:33:21 Number of idle job procs: 0
+10/23/18 17:33:21 Node stage_in_remote_local_0_0 job proc (16094809.0.0) completed successfully.
+10/23/18 17:33:21 Node stage_in_remote_local_0_0 job completed
+10/23/18 17:33:21 Running POST script of Node stage_in_remote_local_0_0...
+10/23/18 17:33:21 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:33:21 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:33:21 Of 15 nodes total:
+10/23/18 17:33:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:33:21   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:33:21     1       0        0       2       0         12        0
+10/23/18 17:33:21 0 job proc(s) currently held
+10/23/18 17:33:21 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094808.0.0)
+10/23/18 17:33:21 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094809.0.0)
+10/23/18 17:33:31 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:33:31 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094808.0.0) {10/23/18 17:33:21}
+10/23/18 17:33:31 POST Script of node stage_in_local_local_1_0 failed with status 1
+10/23/18 17:33:31 POST for Node stage_in_local_local_1_0 returned 1
+10/23/18 17:33:31 Retrying node stage_in_local_local_1_0 (retry #1 of 3)...
+10/23/18 17:33:31 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_remote_local_0_0 (16094809.0.0) {10/23/18 17:33:21}
+10/23/18 17:33:31 POST Script of node stage_in_remote_local_0_0 completed successfully.
+10/23/18 17:33:31 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:33:31 Of 15 nodes total:
+10/23/18 17:33:31  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:33:31   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:33:31     2       0        0       0       2         11        0
+10/23/18 17:33:31 0 job proc(s) currently held
+10/23/18 17:33:41 Reassigning the id of job stage_in_local_local_1_0 from (16094808.0.0) to (-1.-1.-1)
+10/23/18 17:33:41 Submitting HTCondor Node stage_in_local_local_1_0 job(s)...
+10/23/18 17:33:41 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:33:41 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:33:41 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:33:41 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_local_local_1_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_local_local_1_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=700 -a +DAGNodeRetry' '=' '1 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"create_dir_blackdiamond_0_local" ./stage_in_local_local_1_0.sub
+10/23/18 17:33:41 From submit: Submitting job(s).
+10/23/18 17:33:41 From submit: 1 job(s) submitted to cluster 16094810.
+10/23/18 17:33:41 	assigned HTCondor ID (16094810.0.0)
+10/23/18 17:33:41 Submitting HTCondor Node preprocess_j1 job(s)...
+10/23/18 17:33:41 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:33:41 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:33:41 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:33:41 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'preprocess_j1 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'preprocess_j1 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=20 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"stage_in_remote_local_0_0" ./preprocess_j1.sub
+10/23/18 17:33:41 From submit: Submitting job(s).
+10/23/18 17:33:41 From submit: 1 job(s) submitted to cluster 16094811.
+10/23/18 17:33:41 	assigned HTCondor ID (16094811.0.0)
+10/23/18 17:33:41 Just submitted 2 jobs this cycle...
+10/23/18 17:33:41 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:33:41 Reassigning the id of job stage_in_local_local_1_0 from (16094810.0.0) to (16094810.0.0)
+10/23/18 17:33:41 Event: ULOG_SUBMIT for HTCondor Node stage_in_local_local_1_0 (16094810.0.0) {10/23/18 17:33:41}
+10/23/18 17:33:41 Number of idle job procs: 1
+10/23/18 17:33:41 Reassigning the id of job preprocess_j1 from (16094811.0.0) to (16094811.0.0)
+10/23/18 17:33:41 Event: ULOG_SUBMIT for HTCondor Node preprocess_j1 (16094811.0.0) {10/23/18 17:33:41}
+10/23/18 17:33:41 Number of idle job procs: 2
+10/23/18 17:33:41 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:33:41 Of 15 nodes total:
+10/23/18 17:33:41  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:33:41   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:33:41     2       0        2       0       0         11        0
+10/23/18 17:33:41 0 job proc(s) currently held
+10/23/18 17:34:01 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:34:01 Event: ULOG_EXECUTE for HTCondor Node preprocess_j1 (16094811.0.0) {10/23/18 17:34:00}
+10/23/18 17:34:01 Number of idle job procs: 1
+10/23/18 17:34:01 Event: ULOG_EXECUTE for HTCondor Node stage_in_local_local_1_0 (16094810.0.0) {10/23/18 17:34:00}
+10/23/18 17:34:01 Number of idle job procs: 0
+10/23/18 17:34:01 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094810.0.0) {10/23/18 17:34:00}
+10/23/18 17:34:01 Number of idle job procs: 0
+10/23/18 17:34:01 Node stage_in_local_local_1_0 job proc (16094810.0.0) failed with status 1.
+10/23/18 17:34:01 Node stage_in_local_local_1_0 job completed
+10/23/18 17:34:01 Running POST script of Node stage_in_local_local_1_0...
+10/23/18 17:34:01 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:34:01 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:34:01 Of 15 nodes total:
+10/23/18 17:34:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:34:01   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:34:01     2       0        1       1       0         11        0
+10/23/18 17:34:01 0 job proc(s) currently held
+10/23/18 17:34:01 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094810.0.0)
+10/23/18 17:34:11 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:34:11 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094810.0.0) {10/23/18 17:34:01}
+10/23/18 17:34:11 POST Script of node stage_in_local_local_1_0 failed with status 1
+10/23/18 17:34:11 POST for Node stage_in_local_local_1_0 returned 1
+10/23/18 17:34:11 Retrying node stage_in_local_local_1_0 (retry #2 of 3)...
+10/23/18 17:34:11 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:34:11 Of 15 nodes total:
+10/23/18 17:34:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:34:11   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:34:11     2       0        1       0       1         11        0
+10/23/18 17:34:11 0 job proc(s) currently held
+10/23/18 17:34:21 Reassigning the id of job stage_in_local_local_1_0 from (16094810.0.0) to (-1.-1.-1)
+10/23/18 17:34:21 Submitting HTCondor Node stage_in_local_local_1_0 job(s)...
+10/23/18 17:34:21 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:34:21 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:34:21 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:34:21 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_local_local_1_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_local_local_1_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=700 -a +DAGNodeRetry' '=' '2 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"create_dir_blackdiamond_0_local" ./stage_in_local_local_1_0.sub
+10/23/18 17:34:21 From submit: Submitting job(s).
+10/23/18 17:34:21 From submit: 1 job(s) submitted to cluster 16094812.
+10/23/18 17:34:21 	assigned HTCondor ID (16094812.0.0)
+10/23/18 17:34:21 Just submitted 1 job this cycle...
+10/23/18 17:34:21 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:34:21 Reassigning the id of job stage_in_local_local_1_0 from (16094812.0.0) to (16094812.0.0)
+10/23/18 17:34:21 Event: ULOG_SUBMIT for HTCondor Node stage_in_local_local_1_0 (16094812.0.0) {10/23/18 17:34:21}
+10/23/18 17:34:21 Number of idle job procs: 1
+10/23/18 17:34:21 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:34:21 Of 15 nodes total:
+10/23/18 17:34:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:34:21   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:34:21     2       0        2       0       0         11        0
+10/23/18 17:34:21 0 job proc(s) currently held
+10/23/18 17:35:12 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:35:12 Event: ULOG_JOB_TERMINATED for HTCondor Node preprocess_j1 (16094811.0.0) {10/23/18 17:35:05}
+10/23/18 17:35:12 Number of idle job procs: 1
+10/23/18 17:35:12 Node preprocess_j1 job proc (16094811.0.0) completed successfully.
+10/23/18 17:35:12 Node preprocess_j1 job completed
+10/23/18 17:35:12 Running POST script of Node preprocess_j1...
+10/23/18 17:35:12 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:35:12 Event: ULOG_EXECUTE for HTCondor Node stage_in_local_local_1_0 (16094812.0.0) {10/23/18 17:35:05}
+10/23/18 17:35:12 Number of idle job procs: 0
+10/23/18 17:35:12 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094812.0.0) {10/23/18 17:35:05}
+10/23/18 17:35:12 Number of idle job procs: 0
+10/23/18 17:35:12 Node stage_in_local_local_1_0 job proc (16094812.0.0) failed with status 1.
+10/23/18 17:35:12 Node stage_in_local_local_1_0 job completed
+10/23/18 17:35:12 Running POST script of Node stage_in_local_local_1_0...
+10/23/18 17:35:12 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:35:12 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:35:12 Of 15 nodes total:
+10/23/18 17:35:12  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:35:12   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:35:12     2       0        0       2       0         11        0
+10/23/18 17:35:12 0 job proc(s) currently held
+10/23/18 17:35:12 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094812.0.0)
+10/23/18 17:35:12 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094811.0.0)
+10/23/18 17:35:22 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:35:22 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094812.0.0) {10/23/18 17:35:12}
+10/23/18 17:35:22 POST Script of node stage_in_local_local_1_0 failed with status 1
+10/23/18 17:35:22 POST for Node stage_in_local_local_1_0 returned 1
+10/23/18 17:35:22 Retrying node stage_in_local_local_1_0 (retry #3 of 3)...
+10/23/18 17:35:22 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node preprocess_j1 (16094811.0.0) {10/23/18 17:35:12}
+10/23/18 17:35:22 POST Script of node preprocess_j1 completed successfully.
+10/23/18 17:35:22 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:35:22 Of 15 nodes total:
+10/23/18 17:35:22  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:35:22   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:35:22     3       0        0       0       3          9        0
+10/23/18 17:35:22 0 job proc(s) currently held
+10/23/18 17:35:32 Submitting HTCondor Node clean_up_local_level_3_0 job(s)...
+10/23/18 17:35:32 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:35:32 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:35:32 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:35:32 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_3_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_3_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=1000 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"preprocess_j1" ./clean_up_local_level_3_0.sub
+10/23/18 17:35:32 From submit: Submitting job(s).
+10/23/18 17:35:32 From submit: 1 job(s) submitted to cluster 16094813.
+10/23/18 17:35:32 	assigned HTCondor ID (16094813.0.0)
+10/23/18 17:35:32 Submitting HTCondor Node stage_out_local_local_0_0 job(s)...
+10/23/18 17:35:32 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:35:32 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:35:32 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:35:32 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_0_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_0_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=900 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"preprocess_j1" ./stage_out_local_local_0_0.sub
+10/23/18 17:35:32 From submit: Submitting job(s).
+10/23/18 17:35:32 From submit: 1 job(s) submitted to cluster 16094814.
+10/23/18 17:35:32 	assigned HTCondor ID (16094814.0.0)
+10/23/18 17:35:32 Reassigning the id of job stage_in_local_local_1_0 from (16094812.0.0) to (-1.-1.-1)
+10/23/18 17:35:32 Submitting HTCondor Node stage_in_local_local_1_0 job(s)...
+10/23/18 17:35:32 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:35:32 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:35:32 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:35:32 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_local_local_1_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_local_local_1_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=700 -a +DAGNodeRetry' '=' '3 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"create_dir_blackdiamond_0_local" ./stage_in_local_local_1_0.sub
+10/23/18 17:35:32 From submit: Submitting job(s).
+10/23/18 17:35:32 From submit: 1 job(s) submitted to cluster 16094815.
+10/23/18 17:35:32 	assigned HTCondor ID (16094815.0.0)
+10/23/18 17:35:32 Just submitted 3 jobs this cycle...
+10/23/18 17:35:32 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:35:32 Reassigning the id of job clean_up_local_level_3_0 from (16094813.0.0) to (16094813.0.0)
+10/23/18 17:35:32 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_3_0 (16094813.0.0) {10/23/18 17:35:32}
+10/23/18 17:35:32 Number of idle job procs: 1
+10/23/18 17:35:32 Reassigning the id of job stage_out_local_local_0_0 from (16094814.0.0) to (16094814.0.0)
+10/23/18 17:35:32 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_0_0 (16094814.0.0) {10/23/18 17:35:32}
+10/23/18 17:35:32 Number of idle job procs: 2
+10/23/18 17:35:32 Reassigning the id of job stage_in_local_local_1_0 from (16094815.0.0) to (16094815.0.0)
+10/23/18 17:35:32 Event: ULOG_SUBMIT for HTCondor Node stage_in_local_local_1_0 (16094815.0.0) {10/23/18 17:35:32}
+10/23/18 17:35:32 Number of idle job procs: 3
+10/23/18 17:35:32 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:35:32 Of 15 nodes total:
+10/23/18 17:35:32  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:35:32   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:35:32     3       0        3       0       0          9        0
+10/23/18 17:35:32 0 job proc(s) currently held
+10/23/18 17:35:52 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:35:52 Event: ULOG_EXECUTE for HTCondor Node stage_in_local_local_1_0 (16094815.0.0) {10/23/18 17:35:50}
+10/23/18 17:35:52 Number of idle job procs: 2
+10/23/18 17:35:52 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_0_0 (16094814.0.0) {10/23/18 17:35:50}
+10/23/18 17:35:52 Number of idle job procs: 1
+10/23/18 17:36:02 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:36:02 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094815.0.0) {10/23/18 17:35:54}
+10/23/18 17:36:02 Number of idle job procs: 1
+10/23/18 17:36:02 Node stage_in_local_local_1_0 job proc (16094815.0.0) completed successfully.
+10/23/18 17:36:02 Node stage_in_local_local_1_0 job completed
+10/23/18 17:36:02 Running POST script of Node stage_in_local_local_1_0...
+10/23/18 17:36:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:36:02 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_0_0 (16094814.0.0) {10/23/18 17:35:54}
+10/23/18 17:36:02 Number of idle job procs: 1
+10/23/18 17:36:02 Node stage_out_local_local_0_0 job proc (16094814.0.0) completed successfully.
+10/23/18 17:36:02 Node stage_out_local_local_0_0 job completed
+10/23/18 17:36:02 Running POST script of Node stage_out_local_local_0_0...
+10/23/18 17:36:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:36:02 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_3_0 (16094813.0.0) {10/23/18 17:35:55}
+10/23/18 17:36:02 Number of idle job procs: 0
+10/23/18 17:36:02 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_3_0 (16094813.0.0) {10/23/18 17:35:57}
+10/23/18 17:36:02 Number of idle job procs: 0
+10/23/18 17:36:02 Node clean_up_local_level_3_0 job proc (16094813.0.0) completed successfully.
+10/23/18 17:36:02 Node clean_up_local_level_3_0 job completed
+10/23/18 17:36:02 Running POST script of Node clean_up_local_level_3_0...
+10/23/18 17:36:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:36:02 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:36:02 Of 15 nodes total:
+10/23/18 17:36:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:36:02   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:36:02     3       0        0       3       0          9        0
+10/23/18 17:36:02 0 job proc(s) currently held
+10/23/18 17:36:02 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094815.0.0)
+10/23/18 17:36:02 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094814.0.0)
+10/23/18 17:36:02 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094813.0.0)
+10/23/18 17:36:12 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:36:12 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_local_local_1_0 (16094815.0.0) {10/23/18 17:36:02}
+10/23/18 17:36:12 POST Script of node stage_in_local_local_1_0 completed successfully.
+10/23/18 17:36:12 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_0_0 (16094814.0.0) {10/23/18 17:36:02}
+10/23/18 17:36:12 POST Script of node stage_out_local_local_0_0 completed successfully.
+10/23/18 17:36:12 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_3_0 (16094813.0.0) {10/23/18 17:36:02}
+10/23/18 17:36:12 POST Script of node clean_up_local_level_3_0 completed successfully.
+10/23/18 17:36:12 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:36:12 Of 15 nodes total:
+10/23/18 17:36:12  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:36:12   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:36:12     6       0        0       0       2          7        0
+10/23/18 17:36:12 0 job proc(s) currently held
+10/23/18 17:36:22 Submitting HTCondor Node findrange_j3 job(s)...
+10/23/18 17:36:22 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:36:22 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:36:22 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:36:22 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'findrange_j3 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'findrange_j3 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=30 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"stage_in_local_local_1_0,preprocess_j1" ./findrange_j3.sub
+10/23/18 17:36:22 From submit: Submitting job(s).
+10/23/18 17:36:22 From submit: 1 job(s) submitted to cluster 16094816.
+10/23/18 17:36:22 	assigned HTCondor ID (16094816.0.0)
+10/23/18 17:36:22 Submitting HTCondor Node findrange_j2 job(s)...
+10/23/18 17:36:22 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:36:22 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:36:22 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:36:22 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'findrange_j2 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'findrange_j2 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=30 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"stage_in_local_local_1_0,preprocess_j1" ./findrange_j2.sub
+10/23/18 17:36:22 From submit: Submitting job(s).
+10/23/18 17:36:22 From submit: 1 job(s) submitted to cluster 16094817.
+10/23/18 17:36:22 	assigned HTCondor ID (16094817.0.0)
+10/23/18 17:36:22 Just submitted 2 jobs this cycle...
+10/23/18 17:36:22 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:36:22 Reassigning the id of job findrange_j3 from (16094816.0.0) to (16094816.0.0)
+10/23/18 17:36:22 Event: ULOG_SUBMIT for HTCondor Node findrange_j3 (16094816.0.0) {10/23/18 17:36:22}
+10/23/18 17:36:22 Number of idle job procs: 1
+10/23/18 17:36:22 Reassigning the id of job findrange_j2 from (16094817.0.0) to (16094817.0.0)
+10/23/18 17:36:22 Event: ULOG_SUBMIT for HTCondor Node findrange_j2 (16094817.0.0) {10/23/18 17:36:22}
+10/23/18 17:36:22 Number of idle job procs: 2
+10/23/18 17:36:22 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:36:22 Of 15 nodes total:
+10/23/18 17:36:22  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:36:22   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:36:22     6       0        2       0       0          7        0
+10/23/18 17:36:22 0 job proc(s) currently held
+10/23/18 17:37:42 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:37:42 Event: ULOG_EXECUTE for HTCondor Node findrange_j3 (16094816.0.0) {10/23/18 17:37:40}
+10/23/18 17:37:42 Number of idle job procs: 1
+10/23/18 17:37:42 Event: ULOG_EXECUTE for HTCondor Node findrange_j2 (16094817.0.0) {10/23/18 17:37:40}
+10/23/18 17:37:42 Number of idle job procs: 0
+10/23/18 17:39:02 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:39:02 Event: ULOG_JOB_TERMINATED for HTCondor Node findrange_j2 (16094817.0.0) {10/23/18 17:39:01}
+10/23/18 17:39:02 Number of idle job procs: 0
+10/23/18 17:39:02 Node findrange_j2 job proc (16094817.0.0) completed successfully.
+10/23/18 17:39:02 Node findrange_j2 job completed
+10/23/18 17:39:02 Running POST script of Node findrange_j2...
+10/23/18 17:39:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:39:02 Event: ULOG_JOB_TERMINATED for HTCondor Node findrange_j3 (16094816.0.0) {10/23/18 17:39:01}
+10/23/18 17:39:02 Number of idle job procs: 0
+10/23/18 17:39:02 Node findrange_j3 job proc (16094816.0.0) completed successfully.
+10/23/18 17:39:02 Node findrange_j3 job completed
+10/23/18 17:39:02 Running POST script of Node findrange_j3...
+10/23/18 17:39:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:39:02 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:39:02 Of 15 nodes total:
+10/23/18 17:39:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:39:02   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:39:02     6       0        0       2       0          7        0
+10/23/18 17:39:02 0 job proc(s) currently held
+10/23/18 17:39:02 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094817.0.0)
+10/23/18 17:39:02 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094816.0.0)
+10/23/18 17:39:12 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:39:12 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node findrange_j2 (16094817.0.0) {10/23/18 17:39:02}
+10/23/18 17:39:12 POST Script of node findrange_j2 completed successfully.
+10/23/18 17:39:12 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node findrange_j3 (16094816.0.0) {10/23/18 17:39:02}
+10/23/18 17:39:12 POST Script of node findrange_j3 completed successfully.
+10/23/18 17:39:12 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:39:12 Of 15 nodes total:
+10/23/18 17:39:12  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:39:12   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:39:12     8       0        0       0       3          4        0
+10/23/18 17:39:12 0 job proc(s) currently held
+10/23/18 17:39:22 Submitting HTCondor Node clean_up_local_level_4_0 job(s)...
+10/23/18 17:39:22 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:39:22 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:39:22 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:39:22 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_4_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_4_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=1000 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"findrange_j2,findrange_j3,stage_out_local_local_0_0" ./clean_up_local_level_4_0.sub
+10/23/18 17:39:22 From submit: Submitting job(s).
+10/23/18 17:39:22 From submit: 1 job(s) submitted to cluster 16094818.
+10/23/18 17:39:22 	assigned HTCondor ID (16094818.0.0)
+10/23/18 17:39:22 Submitting HTCondor Node stage_out_local_local_1_0 job(s)...
+10/23/18 17:39:22 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:39:22 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:39:22 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:39:22 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_1_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_1_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=900 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"findrange_j2,findrange_j3" ./stage_out_local_local_1_0.sub
+10/23/18 17:39:22 From submit: Submitting job(s).
+10/23/18 17:39:22 From submit: 1 job(s) submitted to cluster 16094819.
+10/23/18 17:39:22 	assigned HTCondor ID (16094819.0.0)
+10/23/18 17:39:22 Submitting HTCondor Node analyze_j4 job(s)...
+10/23/18 17:39:22 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:39:22 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:39:22 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:39:22 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'analyze_j4 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'analyze_j4 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=40 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"findrange_j2,findrange_j3" ./analyze_j4.sub
+10/23/18 17:39:22 From submit: Submitting job(s).
+10/23/18 17:39:22 From submit: 1 job(s) submitted to cluster 16094820.
+10/23/18 17:39:22 	assigned HTCondor ID (16094820.0.0)
+10/23/18 17:39:22 Just submitted 3 jobs this cycle...
+10/23/18 17:39:22 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:39:22 Reassigning the id of job clean_up_local_level_4_0 from (16094818.0.0) to (16094818.0.0)
+10/23/18 17:39:22 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_4_0 (16094818.0.0) {10/23/18 17:39:22}
+10/23/18 17:39:22 Number of idle job procs: 1
+10/23/18 17:39:22 Reassigning the id of job stage_out_local_local_1_0 from (16094819.0.0) to (16094819.0.0)
+10/23/18 17:39:22 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_1_0 (16094819.0.0) {10/23/18 17:39:22}
+10/23/18 17:39:22 Number of idle job procs: 2
+10/23/18 17:39:22 Reassigning the id of job analyze_j4 from (16094820.0.0) to (16094820.0.0)
+10/23/18 17:39:22 Event: ULOG_SUBMIT for HTCondor Node analyze_j4 (16094820.0.0) {10/23/18 17:39:22}
+10/23/18 17:39:22 Number of idle job procs: 3
+10/23/18 17:39:22 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:39:22 Of 15 nodes total:
+10/23/18 17:39:22  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:39:22   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:39:22     8       0        3       0       0          4        0
+10/23/18 17:39:22 0 job proc(s) currently held
+10/23/18 17:40:32 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:40:32 Event: ULOG_EXECUTE for HTCondor Node analyze_j4 (16094820.0.0) {10/23/18 17:40:28}
+10/23/18 17:40:32 Number of idle job procs: 2
+10/23/18 17:40:32 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_4_0 (16094818.0.0) {10/23/18 17:40:28}
+10/23/18 17:40:32 Number of idle job procs: 1
+10/23/18 17:40:43 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:40:43 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_1_0 (16094819.0.0) {10/23/18 17:40:33}
+10/23/18 17:40:43 Number of idle job procs: 0
+10/23/18 17:40:43 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_4_0 (16094818.0.0) {10/23/18 17:40:34}
+10/23/18 17:40:43 Number of idle job procs: 0
+10/23/18 17:40:43 Node clean_up_local_level_4_0 job proc (16094818.0.0) completed successfully.
+10/23/18 17:40:43 Node clean_up_local_level_4_0 job completed
+10/23/18 17:40:43 Running POST script of Node clean_up_local_level_4_0...
+10/23/18 17:40:43 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:40:43 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_1_0 (16094819.0.0) {10/23/18 17:40:37}
+10/23/18 17:40:43 Number of idle job procs: 0
+10/23/18 17:40:43 Node stage_out_local_local_1_0 job proc (16094819.0.0) completed successfully.
+10/23/18 17:40:43 Node stage_out_local_local_1_0 job completed
+10/23/18 17:40:43 Running POST script of Node stage_out_local_local_1_0...
+10/23/18 17:40:43 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:40:43 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:40:43 Of 15 nodes total:
+10/23/18 17:40:43  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:40:43   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:40:43     8       0        1       2       0          4        0
+10/23/18 17:40:43 0 job proc(s) currently held
+10/23/18 17:40:43 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094818.0.0)
+10/23/18 17:40:43 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094819.0.0)
+10/23/18 17:40:53 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:40:53 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_4_0 (16094818.0.0) {10/23/18 17:40:43}
+10/23/18 17:40:53 POST Script of node clean_up_local_level_4_0 completed successfully.
+10/23/18 17:40:53 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_1_0 (16094819.0.0) {10/23/18 17:40:43}
+10/23/18 17:40:53 POST Script of node stage_out_local_local_1_0 completed successfully.
+10/23/18 17:40:53 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:40:53 Of 15 nodes total:
+10/23/18 17:40:53  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:40:53   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:40:53    10       0        1       0       0          4        0
+10/23/18 17:40:53 0 job proc(s) currently held
+10/23/18 17:41:43 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:41:43 Event: ULOG_JOB_TERMINATED for HTCondor Node analyze_j4 (16094820.0.0) {10/23/18 17:41:33}
+10/23/18 17:41:43 Number of idle job procs: 0
+10/23/18 17:41:43 Node analyze_j4 job proc (16094820.0.0) completed successfully.
+10/23/18 17:41:43 Node analyze_j4 job completed
+10/23/18 17:41:43 Running POST script of Node analyze_j4...
+10/23/18 17:41:43 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:41:43 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:41:43 Of 15 nodes total:
+10/23/18 17:41:43  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:41:43   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:41:43    10       0        0       1       0          4        0
+10/23/18 17:41:43 0 job proc(s) currently held
+10/23/18 17:41:43 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094820.0.0)
+10/23/18 17:41:53 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:41:53 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node analyze_j4 (16094820.0.0) {10/23/18 17:41:43}
+10/23/18 17:41:53 POST Script of node analyze_j4 completed successfully.
+10/23/18 17:41:53 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:41:53 Of 15 nodes total:
+10/23/18 17:41:53  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:41:53   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:41:53    11       0        0       0       2          2        0
+10/23/18 17:41:53 0 job proc(s) currently held
+10/23/18 17:42:03 Submitting HTCondor Node clean_up_local_level_5_0 job(s)...
+10/23/18 17:42:03 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:42:03 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:42:03 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:42:03 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_5_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_5_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=1000 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"analyze_j4,stage_out_local_local_1_0" ./clean_up_local_level_5_0.sub
+10/23/18 17:42:03 From submit: Submitting job(s).
+10/23/18 17:42:03 From submit: 1 job(s) submitted to cluster 16094821.
+10/23/18 17:42:03 	assigned HTCondor ID (16094821.0.0)
+10/23/18 17:42:03 Submitting HTCondor Node stage_out_local_local_2_0 job(s)...
+10/23/18 17:42:03 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:42:03 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:42:03 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:42:03 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_2_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_2_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=900 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"analyze_j4" ./stage_out_local_local_2_0.sub
+10/23/18 17:42:03 From submit: Submitting job(s).
+10/23/18 17:42:03 From submit: 1 job(s) submitted to cluster 16094822.
+10/23/18 17:42:03 	assigned HTCondor ID (16094822.0.0)
+10/23/18 17:42:03 Just submitted 2 jobs this cycle...
+10/23/18 17:42:03 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:42:03 Reassigning the id of job clean_up_local_level_5_0 from (16094821.0.0) to (16094821.0.0)
+10/23/18 17:42:03 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_5_0 (16094821.0.0) {10/23/18 17:42:03}
+10/23/18 17:42:03 Number of idle job procs: 1
+10/23/18 17:42:03 Reassigning the id of job stage_out_local_local_2_0 from (16094822.0.0) to (16094822.0.0)
+10/23/18 17:42:03 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_2_0 (16094822.0.0) {10/23/18 17:42:03}
+10/23/18 17:42:03 Number of idle job procs: 2
+10/23/18 17:42:03 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:42:03 Of 15 nodes total:
+10/23/18 17:42:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:42:03   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:42:03    11       0        2       0       0          2        0
+10/23/18 17:42:03 0 job proc(s) currently held
+10/23/18 17:43:03 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:43:03 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_5_0 (16094821.0.0) {10/23/18 17:42:56}
+10/23/18 17:43:03 Number of idle job procs: 1
+10/23/18 17:43:03 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_2_0 (16094822.0.0) {10/23/18 17:42:56}
+10/23/18 17:43:03 Number of idle job procs: 0
+10/23/18 17:43:03 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_2_0 (16094822.0.0) {10/23/18 17:42:59}
+10/23/18 17:43:03 Number of idle job procs: 0
+10/23/18 17:43:03 Node stage_out_local_local_2_0 job proc (16094822.0.0) completed successfully.
+10/23/18 17:43:03 Node stage_out_local_local_2_0 job completed
+10/23/18 17:43:03 Running POST script of Node stage_out_local_local_2_0...
+10/23/18 17:43:03 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:43:03 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_5_0 (16094821.0.0) {10/23/18 17:43:00}
+10/23/18 17:43:03 Number of idle job procs: 0
+10/23/18 17:43:03 Node clean_up_local_level_5_0 job proc (16094821.0.0) completed successfully.
+10/23/18 17:43:03 Node clean_up_local_level_5_0 job completed
+10/23/18 17:43:03 Running POST script of Node clean_up_local_level_5_0...
+10/23/18 17:43:03 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:43:03 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:43:03 Of 15 nodes total:
+10/23/18 17:43:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:43:03   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:43:03    11       0        0       2       0          2        0
+10/23/18 17:43:03 0 job proc(s) currently held
+10/23/18 17:43:03 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094822.0.0)
+10/23/18 17:43:03 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094821.0.0)
+10/23/18 17:43:13 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:43:13 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_2_0 (16094822.0.0) {10/23/18 17:43:03}
+10/23/18 17:43:13 POST Script of node stage_out_local_local_2_0 completed successfully.
+10/23/18 17:43:13 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_5_0 (16094821.0.0) {10/23/18 17:43:03}
+10/23/18 17:43:13 POST Script of node clean_up_local_level_5_0 completed successfully.
+10/23/18 17:43:13 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:43:13 Of 15 nodes total:
+10/23/18 17:43:13  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:43:13   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:43:13    13       0        0       0       1          1        0
+10/23/18 17:43:13 0 job proc(s) currently held
+10/23/18 17:43:23 Submitting HTCondor Node clean_up_local_level_6_0 job(s)...
+10/23/18 17:43:23 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:43:23 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:43:23 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:43:23 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_6_0 -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_6_0 -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=1000 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '60 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"stage_out_local_local_2_0" ./clean_up_local_level_6_0.sub
+10/23/18 17:43:23 From submit: Submitting job(s).
+10/23/18 17:43:23 From submit: 1 job(s) submitted to cluster 16094823.
+10/23/18 17:43:23 	assigned HTCondor ID (16094823.0.0)
+10/23/18 17:43:23 Just submitted 1 job this cycle...
+10/23/18 17:43:23 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:43:23 Reassigning the id of job clean_up_local_level_6_0 from (16094823.0.0) to (16094823.0.0)
+10/23/18 17:43:23 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_6_0 (16094823.0.0) {10/23/18 17:43:23}
+10/23/18 17:43:23 Number of idle job procs: 1
+10/23/18 17:43:23 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:43:23 Of 15 nodes total:
+10/23/18 17:43:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:43:23   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:43:23    13       0        1       0       0          1        0
+10/23/18 17:43:23 0 job proc(s) currently held
+10/23/18 17:47:13 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:47:13 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_6_0 (16094823.0.0) {10/23/18 17:47:09}
+10/23/18 17:47:13 Number of idle job procs: 0
+10/23/18 17:47:13 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_6_0 (16094823.0.0) {10/23/18 17:47:12}
+10/23/18 17:47:13 Number of idle job procs: 0
+10/23/18 17:47:13 Node clean_up_local_level_6_0 job proc (16094823.0.0) completed successfully.
+10/23/18 17:47:13 Node clean_up_local_level_6_0 job completed
+10/23/18 17:47:13 Running POST script of Node clean_up_local_level_6_0...
+10/23/18 17:47:13 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:47:13 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:47:13 Of 15 nodes total:
+10/23/18 17:47:13  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:47:13   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:47:13    13       0        0       1       0          1        0
+10/23/18 17:47:13 0 job proc(s) currently held
+10/23/18 17:47:13 Initializing user log writer for /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log, (16094823.0.0)
+10/23/18 17:47:23 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:47:23 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_6_0 (16094823.0.0) {10/23/18 17:47:13}
+10/23/18 17:47:23 POST Script of node clean_up_local_level_6_0 completed successfully.
+10/23/18 17:47:23 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:47:23 Of 15 nodes total:
+10/23/18 17:47:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:47:23   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:47:23    14       0        0       0       1          0        0
+10/23/18 17:47:23 0 job proc(s) currently held
+10/23/18 17:47:33 Submitting HTCondor Node cleanup_blackdiamond_0_local job(s)...
+10/23/18 17:47:33 Adding a DAGMan workflow log /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log
+10/23/18 17:47:33 Masking the events recorded in the DAGMAN workflow log
+10/23/18 17:47:33 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+10/23/18 17:47:33 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'cleanup_blackdiamond_0_local -a +DAGManJobId' '=' '16094806 -a DAGManJobId' '=' '16094806 -batch-name blackdiamond-0.dag+16094806 -a submit_event_notes' '=' 'DAG' 'Node:' 'cleanup_blackdiamond_0_local -a dagman_log' '=' '/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./blackdiamond-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a priority=1000 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"clean_up_local_level_3_0,clean_up_local_level_4_0,clean_up_local_level_5_0,clean_up_local_level_6_0" ./cleanup_blackdiamond_0_local.sub
+10/23/18 17:47:33 From submit: Submitting job(s).
+10/23/18 17:47:33 From submit: 1 job(s) submitted to cluster 16094824.
+10/23/18 17:47:33 	assigned HTCondor ID (16094824.0.0)
+10/23/18 17:47:33 Just submitted 1 job this cycle...
+10/23/18 17:47:33 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:47:33 Reassigning the id of job cleanup_blackdiamond_0_local from (16094824.0.0) to (16094824.0.0)
+10/23/18 17:47:33 Event: ULOG_SUBMIT for HTCondor Node cleanup_blackdiamond_0_local (16094824.0.0) {10/23/18 17:47:33}
+10/23/18 17:47:33 Number of idle job procs: 1
+10/23/18 17:47:33 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:47:33 Of 15 nodes total:
+10/23/18 17:47:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:47:33   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:47:33    14       0        1       0       0          0        0
+10/23/18 17:47:33 0 job proc(s) currently held
+10/23/18 17:48:24 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:48:24 Event: ULOG_EXECUTE for HTCondor Node cleanup_blackdiamond_0_local (16094824.0.0) {10/23/18 17:48:23}
+10/23/18 17:48:24 Number of idle job procs: 0
+10/23/18 17:48:34 Currently monitoring 1 HTCondor log file(s)
+10/23/18 17:48:34 Event: ULOG_JOB_TERMINATED for HTCondor Node cleanup_blackdiamond_0_local (16094824.0.0) {10/23/18 17:48:26}
+10/23/18 17:48:34 Number of idle job procs: 0
+10/23/18 17:48:34 Node cleanup_blackdiamond_0_local job proc (16094824.0.0) completed successfully.
+10/23/18 17:48:34 Node cleanup_blackdiamond_0_local job completed
+10/23/18 17:48:34 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:48:34 Of 15 nodes total:
+10/23/18 17:48:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:48:34   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:48:34    15       0        0       0       0          0        0
+10/23/18 17:48:34 0 job proc(s) currently held
+10/23/18 17:48:34 All jobs Completed!
+10/23/18 17:48:34 Note: 0 total job deferrals because of -MaxJobs limit (50000)
+10/23/18 17:48:34 Note: 0 total job deferrals because of -MaxIdle limit (5000)
+10/23/18 17:48:34 Note: 0 total job deferrals because of node category throttles
+10/23/18 17:48:34 Note: 0 total PRE script deferrals because of -MaxPre limit (1) or DEFER
+10/23/18 17:48:34 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+10/23/18 17:48:34 DAG status: 0 (DAG_STATUS_OK)
+10/23/18 17:48:34 Of 15 nodes total:
+10/23/18 17:48:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+10/23/18 17:48:34   ===     ===      ===     ===     ===        ===      ===
+10/23/18 17:48:34    15       0        0       0       0          0        0
+10/23/18 17:48:34 0 job proc(s) currently held
+10/23/18 17:48:34 Wrote metrics file blackdiamond-0.dag.metrics.
+10/23/18 17:48:34 Reporting metrics to Pegasus metrics server(s); output is in blackdiamond-0.dag.metrics.out.
+10/23/18 17:48:34 Running command </usr/libexec/condor/condor_dagman_metrics_reporter -f blackdiamond-0.dag.metrics -t 100>
+10/23/18 17:48:34 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+10/23/18 17:48:34 **** condor_scheduniv_exec.16094806.0 (condor_DAGMAN) pid 369228 EXITING WITH STATUS 0

@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003", "recursive": "True" } }
+]

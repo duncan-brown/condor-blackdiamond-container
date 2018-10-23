@@ -1,0 +1,44 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : blackdiamond, Index = 0, Count = 1
+# SUBMIT FILE NAME : findrange_j3.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=dc74a7ad-7076-4ac5-8b4a-b37d1ee1647a PEGASUS_WF_LABEL=blackdiamond PEGASUS_DAG_JOB_ID=findrange_j3 PEGASUS_SITE=condorpool"
++TransferOutput = ""
+copy_to_spool = false
+error = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003//./findrange_j3.err
+executable = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./findrange_j3.sh
+log = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.log
+notification = NEVER
+output = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003//./findrange_j3.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 43200)
+priority = 30
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./preprocess_j1.meta,/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/./stage_in_local_local_1_0.meta,/usr/share/pegasus/sh/pegasus-lite-common.sh,/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/pegasus-worker-4.9.0dev-x86_64_rhel_7.tar.gz
+universe = vanilla
+when_to_transfer_output = ON_EXIT
+x509userproxy = /tmp/x509up_u620
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "dc74a7ad-7076-4ac5-8b4a-b37d1ee1647a"
++pegasus_wf_uuid = "dc74a7ad-7076-4ac5-8b4a-b37d1ee1647a"
++pegasus_version = "4.9.0dev"
++pegasus_wf_name = "blackdiamond-0"
++pegasus_wf_app = "ligo-pycbc"
++pegasus_wf_time = "20181023T172515-0400"
++pegasus_wf_xformation = "pegasus::findrange:4.0"
++pegasus_wf_dax_job_id = "j3"
++pegasus_wf_dag_job_id = "findrange_j3"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

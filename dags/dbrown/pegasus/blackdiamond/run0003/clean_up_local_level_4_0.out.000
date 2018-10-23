@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2018-10-23T17:40:28.333-04:00" duration="6.141" transformation="pegasus::cleanup" derivation="null" resource="local" wf-label="blackdiamond" wf-stamp="2018-10-23T16:55:04-04:00" interface="eno16780032" hostaddr="128.230.146.18" hostname="sugwg-osg.phy.syr.edu" pid="370149" uid="620" user="dbrown" gid="1010" group="lsc" umask="0022">
+  <mainjob start="2018-10-23T17:40:28.358-04:00" duration="6.115" pid="370188">
+    <usage utime="0.265" stime="0.107" maxrss="17192" minflt="34664" majflt="0" nswap="0" inblock="8" outblock="48" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="603" nivcsw="30"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/usr/bin/pegasus-transfer">23212F7573722F62696E2F707974686F</file>
+      <statinfo mode="0100755" size="159501" inode="201385351" nlink="1" blksize="4096" blocks="312" mtime="2018-10-23T15:22:17-04:00" atime="2018-10-23T15:45:45-04:00" ctime="2018-10-23T15:35:17-04:00" uid="0" user="root" gid="0" group="root"/>
+    </statcall>
+    <argument-vector/>
+  </mainjob>
+  <jobids condor="16094818.0"/>
+  <cwd>/var/lib/condor/spool/local_univ_execute/dir_370140</cwd>
+  <usage utime="0.005" stime="0.021" maxrss="800" minflt="1416" majflt="0" nswap="0" inblock="0" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="2" nivcsw="2"/>
+  <machine page-size="4096">
+    <stamp>2018-10-23T17:40:28.333-04:00</stamp>
+    <uname system="linux" nodename="sugwg-osg.phy.syr.edu" release="3.10.0-693.2.2.el7.x86_64" machine="x86_64">#1 SMP Tue Sep 12 10:10:26 CDT 2017</uname>
+    <linux>
+      <ram total="98836128" free="28058668" shared="0" buffer="192"/>
+      <swap total="4194300" free="4194300"/>
+      <boot idle="201774813.500">2018-05-30T15:56:57.403-04:00</boot>
+      <cpu count="16" speed="2195" vendor="GenuineIntel">Intel(R) Xeon(R) CPU E7-8890 v4 @ 2.20GHz</cpu>
+      <load min1="0.04" min5="0.11" min15="0.11"/>
+      <procs total="335" running="1" sleeping="334" vmsize="41519676" rss="3841132"/>
+      <task total="698" running="1" sleeping="697"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="stdin">
+    <descriptor number="0"/>
+    <statinfo mode="010600" size="0" inode="51807288" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:40:28-04:00" atime="2018-10-23T17:40:28-04:00" ctime="2018-10-23T17:40:28-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_370140/ks.out.F3syj5" descriptor="3"/>
+    <statinfo mode="0100600" size="2060" inode="142" nlink="1" blksize="4096" blocks="8" mtime="2018-10-23T17:40:34-04:00" atime="2018-10-23T17:40:28-04:00" ctime="2018-10-23T17:40:34-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+    <data>2018-10-23 17:40:28,424    INFO:  Reading URL pairs from stdin
+2018-10-23 17:40:28,424    INFO:  3 transfers loaded
+2018-10-23 17:40:28,424    INFO:  PATH=/usr/bin:/home/dbrown/bin:/usr/local/bin:/bin:/usr/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2018-10-23 17:40:28,425    INFO:  LD_LIBRARY_PATH=
+2018-10-23 17:40:28,459    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:40:28,459    INFO:  Starting transfers - attempt 1
+2018-10-23 17:40:30,525    INFO:  Tool found: gfal-rm   Version: 2.13.3   Path: /usr/bin/gfal-rm
+2018-10-23 17:40:30,525    INFO:  gfal-rm &apos;gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./centos-pycbc&apos;
+2018-10-23 17:40:31,041    INFO:  gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./centos-pycbc	MISSING
+2018-10-23 17:40:31,042    INFO:  gfal-rm &apos;gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b2&apos;
+2018-10-23 17:40:31,365    INFO:  gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b2	DELETED
+2018-10-23 17:40:31,365    INFO:  gfal-rm &apos;gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b1&apos;
+2018-10-23 17:40:31,680    INFO:  gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b1	DELETED
+2018-10-23 17:40:34,466    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:40:34,466    INFO:  Stats: no local files in the transfer set
+2018-10-23 17:40:34,466    INFO:  All transfers completed successfully.
+</data>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_370140/ks.err.AqnmnC" descriptor="4"/>
+    <statinfo mode="0100600" size="0" inode="143" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:40:28-04:00" atime="2018-10-23T17:40:28-04:00" ctime="2018-10-23T17:40:28-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+  <statcall error="0" id="metadata">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_370140/ks.meta.n2W9q9" descriptor="5"/>
+    <statinfo mode="0100600" size="0" inode="144" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:40:28-04:00" atime="2018-10-23T17:40:28-04:00" ctime="2018-10-23T17:40:28-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+</invocation>

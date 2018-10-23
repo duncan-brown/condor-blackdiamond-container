@@ -1,0 +1,11 @@
+2018-10-23 17:32:06,487    INFO:  Reading URL pairs from stdin
+2018-10-23 17:32:06,488    INFO:  1 transfers loaded
+2018-10-23 17:32:06,488    INFO:  PATH=/home/dbrown/bin:/usr/local/bin:/bin:/usr/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+2018-10-23 17:32:06,488    INFO:  LD_LIBRARY_PATH=
+2018-10-23 17:32:06,523    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:32:06,523    INFO:  Starting transfers - attempt 1
+2018-10-23 17:32:08,585    INFO:  Tool found: gfal-mkdir   Version: 2.13.3   Path: /bin/gfal-mkdir
+2018-10-23 17:32:08,586    INFO:  gfal-mkdir -p 'gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003'
+2018-10-23 17:32:08,951    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:32:08,951    INFO:  Stats: no local files in the transfer set
+2018-10-23 17:32:08,951    INFO:  All transfers completed successfully.

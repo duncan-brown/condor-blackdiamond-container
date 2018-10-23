@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2018-10-23T17:37:57.948-04:00" duration="60.057" transformation="pegasus::findrange:4.0" derivation="j2" resource="condorpool" wf-label="blackdiamond" wf-stamp="2018-10-23T16:55:04-04:00" interface="eth0" hostaddr="10.5.213.91" hostname="CRUSH-SUGWG-OSG-10-5-213-91" pid="229" uid="620" user="dbrown" gid="1010" group="lsc" umask="0022">
+  <mainjob start="2018-10-23T17:37:57.983-04:00" duration="60.021" pid="230">
+    <usage utime="44.611" stime="15.391" maxrss="1236" minflt="400" majflt="24" nswap="0" inblock="6744" outblock="8" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="65" nivcsw="56"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/usr/bin/pegasus-keg">7F454C46020101000000000000000000</file>
+      <statinfo mode="0100755" size="23176" inode="129423" nlink="1" blksize="4096" blocks="46" mtime="2018-08-30T23:35:48-04:00" atime="2018-08-30T23:35:48-04:00" ctime="2018-08-30T23:35:48-04:00" uid="106" gid="106"/>
+    </statcall>
+    <argument-vector>
+      <arg nr="1">-a</arg>
+      <arg nr="2">findrange</arg>
+      <arg nr="3">-T</arg>
+      <arg nr="4">60</arg>
+      <arg nr="5">-i</arg>
+      <arg nr="6">f.b1</arg>
+      <arg nr="7">-o</arg>
+      <arg nr="8">f.c1</arg>
+    </argument-vector>
+  </mainjob>
+  <jobids condor="16094817.0"/>
+  <cwd>/srv</cwd>
+  <usage utime="0.000" stime="0.005" maxrss="816" minflt="358" majflt="19" nswap="0" inblock="4584" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="43" nivcsw="1"/>
+  <machine page-size="4096">
+    <stamp>2018-10-23T17:37:57.948-04:00</stamp>
+    <uname system="linux" nodename="crush-sugwg-osg-10-5-213-91" release="3.10.0-693.5.2.el7.x86_64" machine="x86_64">#1 SMP Thu Oct 19 10:13:14 CDT 2017</uname>
+    <linux>
+      <ram total="43014872" free="37506140" shared="0" buffer="2120"/>
+      <swap total="4063228" free="4063228"/>
+      <boot idle="14001060.410">2018-10-01T20:35:04.969-04:00</boot>
+      <cpu count="24" speed="2667" vendor="GenuineIntel">Intel(R) Xeon(R) CPU X5650 @ 2.67GHz</cpu>
+      <load min1="11.92" min5="11.97" min15="11.91"/>
+      <procs total="4" running="1" sleeping="3" vmsize="72372" rss="6476"/>
+      <task total="4" running="1" sleeping="3"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="final" lfn="f.c1">
+    <file name="/srv/f.c1">20202D2D2D20737461727420662E6231</file>
+    <statinfo mode="0100644" size="211" inode="604346163" nlink="1" blksize="4096" blocks="8" mtime="2018-10-23T17:37:58-04:00" atime="2018-10-23T17:37:58-04:00" ctime="2018-10-23T17:37:58-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+    <checksum type="sha256" value="f8aa544118327aa04c62f37f0fa7fa11dc02d5f49f142289139d514f9cdf8213" timing="0.118"/>
+  </statcall>
+  <statcall error="0" id="stdin">
+    <file name="/dev/null"/>
+    <statinfo mode="020666" size="0" inode="2052" nlink="1" blksize="4096" blocks="0" mtime="2018-10-01T16:35:18-04:00" atime="2018-10-01T16:35:18-04:00" ctime="2018-10-01T16:35:18-04:00" uid="0" user="root" gid="0" group="root"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/tmp/ks.out.mdfCMB" descriptor="3"/>
+    <statinfo mode="0100600" size="0" inode="536873272" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:37:57-04:00" atime="2018-10-23T17:37:57-04:00" ctime="2018-10-23T17:37:57-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/tmp/ks.err.FWTL6Y" descriptor="4"/>
+    <statinfo mode="0100600" size="0" inode="537127780" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:37:57-04:00" atime="2018-10-23T17:37:57-04:00" ctime="2018-10-23T17:37:57-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+  <statcall error="0" id="metadata">
+    <temporary name="/tmp/ks.meta.YfYVqm" descriptor="5"/>
+    <statinfo mode="0100600" size="0" inode="537127781" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:37:57-04:00" atime="2018-10-23T17:37:57-04:00" ctime="2018-10-23T17:37:57-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+</invocation>

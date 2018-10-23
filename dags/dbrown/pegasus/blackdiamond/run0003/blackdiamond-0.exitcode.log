@@ -1,0 +1,17 @@
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:32:11.426470", "name": ".//./create_dir_blackdiamond_0_local.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "task exited with raw status 256\n", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:33:21.677850", "name": ".//./stage_in_local_local_1_0.out", "exitcode": 1, "app_exitcode": 256}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:33:21.678558", "name": ".//./stage_in_remote_local_0_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "task exited with raw status 256\n", "retry": 1, "std_out": "", "timestamp": "2018-10-23T17:34:01.898506", "name": ".//./stage_in_local_local_1_0.out", "exitcode": 1, "app_exitcode": 256}
+{"std_err": "task exited with raw status 256\n", "retry": 2, "std_out": "", "timestamp": "2018-10-23T17:35:12.126746", "name": ".//./stage_in_local_local_1_0.out", "exitcode": 1, "app_exitcode": 256}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:35:12.125765", "name": ".//./preprocess_j1.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 3, "std_out": "", "timestamp": "2018-10-23T17:36:02.400328", "name": ".//./stage_in_local_local_1_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:36:02.401098", "name": ".//./stage_out_local_local_0_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:36:02.406352", "name": ".//./clean_up_local_level_3_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:39:02.764936", "name": ".//./findrange_j2.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:39:02.765719", "name": ".//./findrange_j3.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:40:43.088270", "name": ".//./clean_up_local_level_4_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:40:43.089030", "name": ".//./stage_out_local_local_1_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:41:43.257911", "name": ".//./analyze_j4.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:43:03.518709", "name": ".//./stage_out_local_local_2_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:43:03.519526", "name": ".//./clean_up_local_level_5_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2018-10-23T17:47:13.913932", "name": ".//./clean_up_local_level_6_0.out", "exitcode": 0, "app_exitcode": 0}

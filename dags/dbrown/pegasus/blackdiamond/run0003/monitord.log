@@ -1,0 +1,27 @@
+2018-10-23 17:30:11,662:INFO:pegasus-monitord(70): pegasus-monitord starting - pid 369229 
+2018-10-23 17:30:11,669:INFO:pegasus-monitord(322): Final Command line options are: ['-N', 'blackdiamond-0.dag.dagman.out']
+2018-10-23 17:30:11,674:INFO:Pegasus.monitoring.event_output(455): Connecting workflow event sink to sqlite:////home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.stampede.db
+Created Pegasus database in: sqlite:////home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.stampede.db
+2018-10-23 17:30:12,192:INFO:Pegasus.monitoring.event_output(513): output type=DB namespace=stampede. name=sqlite:////home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.stampede.db
+2018-10-23 17:30:12,192:INFO:Pegasus.monitoring.event_output(455): Connecting workflow event sink to sqlite:////home/dbrown/.pegasus/workflow.db
+2018-10-23 17:30:12,492:INFO:Pegasus.monitoring.event_output(513): output type=DB namespace=dashboard. name=sqlite:////home/dbrown/.pegasus/workflow.db
+2018-10-23 17:30:12,492:INFO:pegasus-monitord(1012): monitord started in fast start mode
+2018-10-23 17:30:12,509:INFO:Pegasus.monitoring.workflow(363): cannot open state file /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/monitord.info, continuing without state...
+2018-10-23 17:30:12,510:INFO:Pegasus.monitoring.workflow(944): creating new file /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/jobstate.log
+2018-10-23 17:30:12,510:INFO:Pegasus.monitoring.workflow(952): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
+2018-10-23 17:30:12,511:INFO:Pegasus.monitoring.notifications(394): loading notifications from /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.notify
+2018-10-23 17:30:12,723:INFO:pegasus-monitord(779): Using DAGMan version 8.6.7 80607
+2018-10-23 17:30:12,723:INFO:pegasus-monitord(759): DAGMan runs at pid 369228
+2018-10-23 17:30:17,733:INFO:pegasus-monitord(765): using dag blackdiamond-0.dag
+2018-10-23 17:30:17,734:INFO:Pegasus.monitoring.workflow(170): Parsing DAG file /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.dag
+2018-10-23 17:30:17,735:INFO:Pegasus.monitoring.workflow(680): DAGMan starting with condor id 16094806.0
+2018-10-23 17:48:34,773:INFO:pegasus-monitord(739): DAGMan blackdiamond-0.dag finished with exit code 0
+2018-10-23 17:48:35,795:INFO:pegasus-monitord(1171): workflow /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.dag.dagman.out ended
+2018-10-23 17:48:35,798:INFO:Pegasus.monitoring.workflow(1118): recovery file deleted: /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/monitord.recover
+2018-10-23 17:48:35,799:INFO:pegasus-monitord(1345): finishing workflow: /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0003/blackdiamond-0.dag.dagman.out
+2018-10-23 17:48:35,799:INFO:pegasus-monitord(1397): finishing notifications...
+2018-10-23 17:48:35,799:INFO:pegasus-monitord(1402): monitord process 369229 exiting with 0
+2018-10-23 17:48:35,800:INFO:pegasus-monitord(185): DB flushing beginning
+2018-10-23 17:48:35,801:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1100): Executing final flush
+2018-10-23 17:48:35,824:INFO:Pegasus.db.dashboard_loader.DashboardLoader(353): Executing final flush
+2018-10-23 17:48:35,826:INFO:pegasus-monitord(199): DB flushing ended

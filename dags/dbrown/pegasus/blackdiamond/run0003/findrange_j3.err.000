@@ -1,0 +1,60 @@
+2018-10-23 17:37:40: PegasusLite: version 4.9.0dev
+2018-10-23 17:37:40: Executing on host CRUSH-SUGWG-OSG-10-5-213-80
+
+########################[Pegasus Lite] Setting up workdir ########################
+2018-10-23 17:37:40: Checking /var/lib/condor/execute/dir_21137 for potential use as work space... 
+2018-10-23 17:37:40:   Workdir is /var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT - 191G available
+2018-10-23 17:37:40: Changing cwd to /var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2018-10-23 17:37:40: The job contained a Pegasus worker package
+
+###############[Pegasus Lite] Staging in input data and executables ###############
+2018-10-23 17:37:40,921    INFO:  Reading URL pairs from stdin
+2018-10-23 17:37:40,924    INFO:  2 transfers loaded
+2018-10-23 17:37:40,924    INFO:  PATH=/var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT/pegasus-4.9.0dev/bin:/usr/local/bin:/usr/bin:/bin
+2018-10-23 17:37:40,924    INFO:  LD_LIBRARY_PATH=
+2018-10-23 17:37:40,965    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:37:40,966    INFO:  Starting transfers - attempt 1
+2018-10-23 17:37:44,150    INFO:  ln -f -s '/cvmfs/singularity.opensciencegrid.org/pycbc/pycbc-el7:latest' '/var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT/centos-pycbc'
+2018-10-23 17:37:44,737    INFO:  Tool found: gfal-copy   Version: 2.13.3   Path: /usr/bin/gfal-copy
+2018-10-23 17:37:44,737    INFO:  gfal-copy -f -p 'gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b2' 'file:///var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT/f.b2'
+2018-10-23 17:37:45,306    INFO:  Copying 129 bytes gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b2 => file:///var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT/f.b2
+2018-10-23 17:37:45,307    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:37:45,307    INFO:  Stats: Total 2 transfers, 4.1 KB transferred in 4 seconds. Rate: 963.2 B/s (7.5 Kb/s)
+2018-10-23 17:37:45,307    INFO:         Between sites condorpool->condorpool : 1 transfers, 4.0 KB transferred in 4 seconds. Rate: 933.8 B/s (7.3 Kb/s)
+2018-10-23 17:37:45,307    INFO:         Between sites local->condorpool : 1 transfers, 129.0 B transferred in 4 seconds. Rate: 29.4 B/s (235.3 b/s)
+2018-10-23 17:37:45,307    INFO:  All transfers completed successfully.
+
+########[Pegasus Lite] Writing out script to launch user task in container ########
+[33mWARNING: Container does not have an exec helper script, calling './findrange_j3-cont.sh' directly
+[0m/srv
+2018-10-23 17:37:47: PegasusLite: version 4.9.0dev
+2018-10-23 17:37:48: Executing on host CRUSH-SUGWG-OSG-10-5-213-80
+
+##############[Container] Figuring out Pegasus worker package to use ##############
+2018-10-23 17:37:49: Warning: Pegasus binaries in /bin do not match Pegasus version used for current workflow
+2018-10-23 17:37:49: Downloading Pegasus worker package from http://download.pegasus.isi.edu/pegasus/4.9.0dev/pegasus-worker-4.9.0dev-x86_64_rhel_7.tar.gz
+PATH in container is set to is set to /srv/pegasus-4.9.0dev/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+
+##################### Checking file integrity for input files #####################
+@@@MONITORING_PAYLOAD - START@@@{"payload": [{"file_type": "input", "failed": 0, "duration": "0.194", "event": "check", "succeeded": 1}], "ts": 1540330677, "monitoring_event": "int.metric"}@@@MONITORING_PAYLOAD - END@@@
+
+#########################[Container] Launching user task #########################
+
+#####################[Pegasus Lite] Staging out output files #####################
+2018-10-23 17:38:58,455    INFO:  Reading URL pairs from stdin
+2018-10-23 17:38:58,457    INFO:  1 transfers loaded
+2018-10-23 17:38:58,457    INFO:  PATH=/var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT/pegasus-4.9.0dev/bin:/usr/local/bin:/usr/bin:/bin
+2018-10-23 17:38:58,457    INFO:  LD_LIBRARY_PATH=
+2018-10-23 17:38:58,490    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:38:58,490    INFO:  Starting transfers - attempt 1
+2018-10-23 17:39:00,576    INFO:  Tool found: gfal-copy   Version: 2.13.3   Path: /usr/bin/gfal-copy
+2018-10-23 17:39:00,576    INFO:  gfal-copy -f -p 'file:///var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT/f.c2' 'gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.c2'
+2018-10-23 17:39:00,892    INFO:  Copying 211 bytes file:///var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT/f.c2 => gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.c2
+2018-10-23 17:39:00,892    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:39:00,893    INFO:  Stats: Total 1 transfers, 211.0 B transferred in 2 seconds. Rate: 86.6 B/s (692.4 b/s)
+2018-10-23 17:39:00,893    INFO:         Between sites condorpool->local : 1 transfers, 211.0 B transferred in 2 seconds. Rate: 86.6 B/s (692.4 b/s)
+2018-10-23 17:39:00,893    INFO:  All transfers completed successfully.
+2018-10-23 17:39:00: /var/lib/condor/execute/dir_21137/pegasus.tpvLHVUvT cleaned up
+PegasusLite: exitcode 0

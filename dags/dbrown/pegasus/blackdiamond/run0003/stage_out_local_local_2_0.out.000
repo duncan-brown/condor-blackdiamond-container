@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2018-10-23T17:42:56.717-04:00" duration="3.237" transformation="pegasus::transfer" derivation="null" resource="local" wf-label="blackdiamond" wf-stamp="2018-10-23T16:55:04-04:00" interface="eno16780032" hostaddr="128.230.146.18" hostname="sugwg-osg.phy.syr.edu" pid="370487" uid="620" user="dbrown" gid="1010" group="lsc" umask="0022">
+  <mainjob start="2018-10-23T17:42:56.738-04:00" duration="3.215" pid="370489">
+    <usage utime="0.295" stime="0.086" maxrss="17484" minflt="38678" majflt="0" nswap="0" inblock="0" outblock="56" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="782" nivcsw="34"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/usr/bin/pegasus-transfer">23212F7573722F62696E2F707974686F</file>
+      <statinfo mode="0100755" size="159501" inode="201385351" nlink="1" blksize="4096" blocks="312" mtime="2018-10-23T15:22:17-04:00" atime="2018-10-23T15:45:45-04:00" ctime="2018-10-23T15:35:17-04:00" uid="0" user="root" gid="0" group="root"/>
+    </statcall>
+    <argument-vector>
+      <arg nr="1">--threads</arg>
+      <arg nr="2">2</arg>
+    </argument-vector>
+  </mainjob>
+  <jobids condor="16094822.0"/>
+  <cwd>/var/lib/condor/spool/local_univ_execute/dir_370480</cwd>
+  <usage utime="0.004" stime="0.018" maxrss="796" minflt="1376" majflt="0" nswap="0" inblock="0" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="2" nivcsw="2"/>
+  <machine page-size="4096">
+    <stamp>2018-10-23T17:42:56.717-04:00</stamp>
+    <uname system="linux" nodename="sugwg-osg.phy.syr.edu" release="3.10.0-693.2.2.el7.x86_64" machine="x86_64">#1 SMP Tue Sep 12 10:10:26 CDT 2017</uname>
+    <linux>
+      <ram total="98836128" free="28157156" shared="0" buffer="192"/>
+      <swap total="4194300" free="4194300"/>
+      <boot idle="201777123.970">2018-05-30T15:56:57.397-04:00</boot>
+      <cpu count="16" speed="2195" vendor="GenuineIntel">Intel(R) Xeon(R) CPU E7-8890 v4 @ 2.20GHz</cpu>
+      <load min1="0.16" min5="0.21" min15="0.15"/>
+      <procs total="327" running="1" sleeping="326" vmsize="39810324" rss="3720668"/>
+      <task total="672" running="1" sleeping="671"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="stdin">
+    <descriptor number="0"/>
+    <statinfo mode="010600" size="0" inode="51810384" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:42:56-04:00" atime="2018-10-23T17:42:56-04:00" ctime="2018-10-23T17:42:56-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_370480/ks.out.W0p5Ng" descriptor="3"/>
+    <statinfo mode="0100600" size="2565" inode="1074356361" nlink="1" blksize="4096" blocks="8" mtime="2018-10-23T17:42:59-04:00" atime="2018-10-23T17:42:56-04:00" ctime="2018-10-23T17:42:59-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+    <data>2018-10-23 17:42:56,801    INFO:  Reading URL pairs from stdin
+2018-10-23 17:42:56,802    INFO:  1 transfers loaded
+2018-10-23 17:42:56,802    INFO:  PATH=/usr/bin:/home/dbrown/bin:/usr/local/bin:/bin:/usr/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2018-10-23 17:42:56,802    INFO:  LD_LIBRARY_PATH=
+2018-10-23 17:42:56,839    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:42:56,839    INFO:  Starting transfers - attempt 1
+2018-10-23 17:42:58,898    INFO:  Tool found: gfal-copy   Version: 2.13.3   Path: /usr/bin/gfal-copy
+2018-10-23 17:42:58,898    INFO:  gfal-copy -f -p &apos;gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.d&apos; &apos;gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/f.d&apos;
+2018-10-23 17:42:59,414    INFO:  Copying 565 bytes gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.d =&gt; gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/f.d
+2018-10-23 17:42:59,415    INFO:  Pulling back f.d to verify checksum
+2018-10-23 17:42:59,416    INFO:  gfal-copy -f -p &apos;gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/f.d&apos; &apos;file:///var/lib/condor/spool/local_univ_execute/dir_370480/pegasus-transfer-cQYOhG.data&apos;
+2018-10-23 17:42:59,881    INFO:  Copying 565 bytes gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/f.d =&gt; file:///var/lib/condor/spool/local_univ_execute/dir_370480/pegasus-transfer-cQYOhG.data
+2018-10-23 17:42:59,881    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /usr/bin/pegasus-integrity
+2018-10-23 17:42:59,881    INFO:  /usr/bin/pegasus-integrity --verify=&quot;f.d=/var/lib/condor/spool/local_univ_execute/dir_370480/pegasus-transfer-cQYOhG.data&quot;
+2018-10-23 17:42:59,946    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:42:59,946    INFO:  @@@MONITORING_PAYLOAD - START@@@{&quot;payload&quot;: [{&quot;file_type&quot;: &quot;output&quot;, &quot;failed&quot;: 0, &quot;duration&quot;: &quot;0.064&quot;, &quot;event&quot;: &quot;check&quot;, &quot;succeeded&quot;: 1}], &quot;ts&quot;: 1540330979, &quot;monitoring_event&quot;: &quot;int.metric&quot;}@@@MONITORING_PAYLOAD - END@@@
+2018-10-23 17:42:59,947    INFO:  Unable to provide stats for third party gsiftp/srm transfers
+2018-10-23 17:42:59,947    INFO:  All transfers completed successfully.
+</data>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_370480/ks.err.vmHMjx" descriptor="4"/>
+    <statinfo mode="0100600" size="0" inode="1074356362" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:42:56-04:00" atime="2018-10-23T17:42:56-04:00" ctime="2018-10-23T17:42:56-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+  <statcall error="0" id="metadata">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_370480/ks.meta.eyQtPN" descriptor="5"/>
+    <statinfo mode="0100600" size="0" inode="1074356363" nlink="1" blksize="4096" blocks="0" mtime="2018-10-23T17:42:56-04:00" atime="2018-10-23T17:42:56-04:00" ctime="2018-10-23T17:42:56-04:00" uid="620" user="dbrown" gid="1010" group="lsc"/>
+  </statcall>
+</invocation>

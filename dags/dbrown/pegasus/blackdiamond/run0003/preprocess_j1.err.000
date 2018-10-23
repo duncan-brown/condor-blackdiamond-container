@@ -1,0 +1,45 @@
+DEBUG: Adding default values to PATH - /bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2018-10-23 17:34:00: PegasusLite: version 4.9.0dev
+2018-10-23 17:34:00: Executing on host sugwg-osg.phy.syr.edu
+
+########################[Pegasus Lite] Setting up workdir ########################
+2018-10-23 17:34:00: Checking /var/lib/condor/spool/local_univ_execute/dir_369384 for potential use as work space... 
+2018-10-23 17:34:00:   Workdir is /var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp - 322G available
+2018-10-23 17:34:00: Changing cwd to /var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2018-10-23 17:34:00: The job contained a Pegasus worker package
+
+###############[Pegasus Lite] Staging in input data and executables ###############
+2018-10-23 17:34:01,242    INFO:  Reading URL pairs from stdin
+2018-10-23 17:34:01,243    INFO:  1 transfers loaded
+2018-10-23 17:34:01,243    INFO:  PATH=/var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp/pegasus-4.9.0dev/bin:/usr/bin:/home/dbrown/bin:/usr/local/bin:/bin:/usr/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2018-10-23 17:34:01,243    INFO:  LD_LIBRARY_PATH=
+2018-10-23 17:34:01,277    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:34:01,277    INFO:  Starting transfers - attempt 1
+2018-10-23 17:34:03,282    INFO:  ln -f -s '/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.a' '/var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp/f.a'
+2018-10-23 17:34:03,291    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:34:03,291    INFO:  Stats: Total 1 transfers, 28.0 B transferred in 2 seconds. Rate: 13.7 B/s (109.3 b/s)
+2018-10-23 17:34:03,291    INFO:         Between sites local->local : 1 transfers, 28.0 B transferred in 2 seconds. Rate: 13.7 B/s (109.3 b/s)
+2018-10-23 17:34:03,291    INFO:  All transfers completed successfully.
+
+##################### Checking file integrity for input files #####################
+@@@MONITORING_PAYLOAD - START@@@{"payload": [{"file_type": "input", "failed": 0, "duration": "0.017", "event": "check", "succeeded": 1}], "ts": 1540330443, "monitoring_event": "int.metric"}@@@MONITORING_PAYLOAD - END@@@
+
+######################[Pegasus Lite] Executing the user task ######################
+
+#####################[Pegasus Lite] Staging out output files #####################
+2018-10-23 17:35:03,578    INFO:  Reading URL pairs from stdin
+2018-10-23 17:35:03,579    INFO:  2 transfers loaded
+2018-10-23 17:35:03,579    INFO:  PATH=/var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp/pegasus-4.9.0dev/bin:/usr/bin:/home/dbrown/bin:/usr/local/bin:/bin:/usr/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2018-10-23 17:35:03,579    INFO:  LD_LIBRARY_PATH=
+2018-10-23 17:35:03,614    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:35:03,614    INFO:  Starting transfers - attempt 1
+2018-10-23 17:35:05,619    INFO:  /bin/cp -f -R -L '/var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp/f.b1' '/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b1'
+2018-10-23 17:35:05,628    INFO:  /bin/cp -f -R -L '/var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp/f.b2' '/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0003/./f.b2'
+2018-10-23 17:35:05,637    INFO:  --------------------------------------------------------------------------------
+2018-10-23 17:35:05,637    INFO:  Stats: Total 2 transfers, 258.0 B transferred in 2 seconds. Rate: 125.3 B/s (1002.3 b/s)
+2018-10-23 17:35:05,637    INFO:         Between sites local->local : 2 transfers, 258.0 B transferred in 2 seconds. Rate: 125.3 B/s (1002.3 b/s)
+2018-10-23 17:35:05,637    INFO:  All transfers completed successfully.
+2018-10-23 17:35:05: /var/lib/condor/spool/local_univ_execute/dir_369384/pegasus.YmzL15nZp cleaned up
+PegasusLite: exitcode 0

@@ -1,0 +1,14 @@
+[
+  {
+    "_type": "file", 
+    "_id": "f.c1", 
+    "_attributes": {
+      "ctime": "2018-10-23T17:37:58-04:00", 
+      "checksum.timing": "0.118", 
+      "user": "dbrown", 
+      "checksum.type": "sha256", 
+      "checksum.value": "f8aa544118327aa04c62f37f0fa7fa11dc02d5f49f142289139d514f9cdf8213", 
+      "size": "211"
+    }
+  }
+]
