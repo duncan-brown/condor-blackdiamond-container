@@ -1,0 +1,46 @@
+digraph E {
+size="8.0,10.0"
+ratio=fill
+node [shape=ellipse]
+edge [arrowhead=normal, arrowsize=1.0]
+	"stage_in_remote_local_1_0" [color=gold,style=filled,label="stage_in_remote_local_1_0"]
+	"stage_in_remote_local_0_0" [color=gold,style=filled,label="stage_in_remote_local_0_0"]
+	"stage_out_local_local_2_0" [color=goldenrod,style=filled,label="stage_out_local_local_2_0"]
+	"stage_out_local_local_1_0" [color=goldenrod,style=filled,label="stage_out_local_local_1_0"]
+	"clean_up_local_level_3_0" [color=deepskyblue,style=filled,label="clean_up_local_level_3_0"]
+	"stage_out_local_local_0_0" [color=goldenrod,style=filled,label="stage_out_local_local_0_0"]
+	"clean_up_local_level_4_0" [color=deepskyblue,style=filled,label="clean_up_local_level_4_0"]
+	"preprocess_j1" [color=blueviolet,style=filled,label="preprocess_j1"]
+	"clean_up_local_level_5_0" [color=deepskyblue,style=filled,label="clean_up_local_level_5_0"]
+	"clean_up_local_level_6_0" [color=deepskyblue,style=filled,label="clean_up_local_level_6_0"]
+	"create_dir_blackdiamond_0_local" [color=darkturquoise,style=filled,label="create_dir_blackdiamond_0_local"]
+	"findrange_j2" [color=blueviolet,style=filled,label="findrange_j2"]
+	"analyze_j4" [color=blueviolet,style=filled,label="analyze_j4"]
+	"findrange_j3" [color=blueviolet,style=filled,label="findrange_j3"]
+	"cleanup_blackdiamond_0_local" [color=deepskyblue,style=filled,label="cleanup_blackdiamond_0_local"]
+
+	"stage_in_remote_local_1_0" -> "findrange_j2"
+	"stage_in_remote_local_1_0" -> "findrange_j3"
+	"stage_in_remote_local_0_0" -> "preprocess_j1"
+	"stage_out_local_local_2_0" -> "clean_up_local_level_6_0"
+	"stage_out_local_local_1_0" -> "clean_up_local_level_5_0"
+	"clean_up_local_level_3_0" -> "cleanup_blackdiamond_0_local"
+	"stage_out_local_local_0_0" -> "clean_up_local_level_4_0"
+	"clean_up_local_level_4_0" -> "cleanup_blackdiamond_0_local"
+	"preprocess_j1" -> "findrange_j2"
+	"preprocess_j1" -> "findrange_j3"
+	"preprocess_j1" -> "clean_up_local_level_3_0"
+	"preprocess_j1" -> "stage_out_local_local_0_0"
+	"clean_up_local_level_5_0" -> "cleanup_blackdiamond_0_local"
+	"clean_up_local_level_6_0" -> "cleanup_blackdiamond_0_local"
+	"create_dir_blackdiamond_0_local" -> "stage_in_remote_local_1_0"
+	"create_dir_blackdiamond_0_local" -> "stage_in_remote_local_0_0"
+	"findrange_j2" -> "analyze_j4"
+	"findrange_j2" -> "stage_out_local_local_1_0"
+	"findrange_j2" -> "clean_up_local_level_4_0"
+	"analyze_j4" -> "stage_out_local_local_2_0"
+	"analyze_j4" -> "clean_up_local_level_5_0"
+	"findrange_j3" -> "analyze_j4"
+	"findrange_j3" -> "stage_out_local_local_1_0"
+	"findrange_j3" -> "clean_up_local_level_4_0"
+}

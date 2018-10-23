@@ -1,0 +1,134 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG blackdiamond
+# Index = 0, Count = 1
+######################################################################
+MAXJOBS stagein 10
+MAXJOBS cleanup 4
+MAXJOBS stageout 10
+
+JOB create_dir_blackdiamond_0_local ./create_dir_blackdiamond_0_local.sub
+SCRIPT POST create_dir_blackdiamond_0_local /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta -r $RETURN .//./create_dir_blackdiamond_0_local.out
+PRIORITY create_dir_blackdiamond_0_local 800
+RETRY create_dir_blackdiamond_0_local 3
+VARS create_dir_blackdiamond_0_local +DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_1_0 ./stage_in_remote_local_1_0.sub
+SCRIPT POST stage_in_remote_local_1_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./stage_in_remote_local_1_0.out
+PRIORITY stage_in_remote_local_1_0 700
+RETRY stage_in_remote_local_1_0 3
+CATEGORY stage_in_remote_local_1_0 stagein
+VARS stage_in_remote_local_1_0 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_0_0 ./stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./stage_in_remote_local_0_0.out
+PRIORITY stage_in_remote_local_0_0 700
+RETRY stage_in_remote_local_0_0 3
+CATEGORY stage_in_remote_local_0_0 stagein
+VARS stage_in_remote_local_0_0 +DAGNodeRetry="$(RETRY)"
+
+JOB preprocess_j1 ./preprocess_j1.sub
+SCRIPT POST preprocess_j1 /usr/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./preprocess_j1.out
+PRIORITY preprocess_j1 20
+RETRY preprocess_j1 3
+VARS preprocess_j1 +DAGNodeRetry="$(RETRY)"
+
+JOB findrange_j2 ./findrange_j2.sub
+SCRIPT POST findrange_j2 /usr/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./findrange_j2.out
+PRIORITY findrange_j2 30
+RETRY findrange_j2 3
+VARS findrange_j2 +DAGNodeRetry="$(RETRY)"
+
+JOB findrange_j3 ./findrange_j3.sub
+SCRIPT POST findrange_j3 /usr/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./findrange_j3.out
+PRIORITY findrange_j3 30
+RETRY findrange_j3 3
+VARS findrange_j3 +DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_3_0 ./clean_up_local_level_3_0.sub
+SCRIPT POST clean_up_local_level_3_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./clean_up_local_level_3_0.out
+PRIORITY clean_up_local_level_3_0 1000
+RETRY clean_up_local_level_3_0 3
+CATEGORY clean_up_local_level_3_0 cleanup
+VARS clean_up_local_level_3_0 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_0_0 ./stage_out_local_local_0_0.sub
+SCRIPT POST stage_out_local_local_0_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./stage_out_local_local_0_0.out
+PRIORITY stage_out_local_local_0_0 900
+RETRY stage_out_local_local_0_0 3
+CATEGORY stage_out_local_local_0_0 stageout
+VARS stage_out_local_local_0_0 +DAGNodeRetry="$(RETRY)"
+
+JOB analyze_j4 ./analyze_j4.sub
+SCRIPT POST analyze_j4 /usr/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./analyze_j4.out
+PRIORITY analyze_j4 40
+RETRY analyze_j4 3
+VARS analyze_j4 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_1_0 ./stage_out_local_local_1_0.sub
+SCRIPT POST stage_out_local_local_1_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./stage_out_local_local_1_0.out
+PRIORITY stage_out_local_local_1_0 900
+RETRY stage_out_local_local_1_0 3
+CATEGORY stage_out_local_local_1_0 stageout
+VARS stage_out_local_local_1_0 +DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_4_0 ./clean_up_local_level_4_0.sub
+SCRIPT POST clean_up_local_level_4_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./clean_up_local_level_4_0.out
+PRIORITY clean_up_local_level_4_0 1000
+RETRY clean_up_local_level_4_0 3
+CATEGORY clean_up_local_level_4_0 cleanup
+VARS clean_up_local_level_4_0 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_2_0 ./stage_out_local_local_2_0.sub
+SCRIPT POST stage_out_local_local_2_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./stage_out_local_local_2_0.out
+PRIORITY stage_out_local_local_2_0 900
+RETRY stage_out_local_local_2_0 3
+CATEGORY stage_out_local_local_2_0 stageout
+VARS stage_out_local_local_2_0 +DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_5_0 ./clean_up_local_level_5_0.sub
+SCRIPT POST clean_up_local_level_5_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./clean_up_local_level_5_0.out
+PRIORITY clean_up_local_level_5_0 1000
+RETRY clean_up_local_level_5_0 3
+CATEGORY clean_up_local_level_5_0 cleanup
+VARS clean_up_local_level_5_0 +DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_6_0 ./clean_up_local_level_6_0.sub
+SCRIPT POST clean_up_local_level_6_0 /usr/bin/pegasus-exitcode  -l blackdiamond-0.exitcode.log -M blackdiamond-0.cache.meta  .//./clean_up_local_level_6_0.out
+PRIORITY clean_up_local_level_6_0 1000
+RETRY clean_up_local_level_6_0 3
+CATEGORY clean_up_local_level_6_0 cleanup
+VARS clean_up_local_level_6_0 +DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_blackdiamond_0_local ./cleanup_blackdiamond_0_local.sub
+PRIORITY cleanup_blackdiamond_0_local 1000
+RETRY cleanup_blackdiamond_0_local 3
+VARS cleanup_blackdiamond_0_local +DAGNodeRetry="$(RETRY)"
+
+PARENT  stage_in_remote_local_1_0 CHILD findrange_j2
+PARENT  stage_in_remote_local_1_0 CHILD findrange_j3
+PARENT  stage_in_remote_local_0_0 CHILD preprocess_j1
+PARENT  stage_out_local_local_2_0 CHILD clean_up_local_level_6_0
+PARENT  stage_out_local_local_1_0 CHILD clean_up_local_level_5_0
+PARENT  clean_up_local_level_3_0 CHILD cleanup_blackdiamond_0_local
+PARENT  stage_out_local_local_0_0 CHILD clean_up_local_level_4_0
+PARENT  clean_up_local_level_4_0 CHILD cleanup_blackdiamond_0_local
+PARENT  preprocess_j1 CHILD findrange_j2
+PARENT  preprocess_j1 CHILD findrange_j3
+PARENT  preprocess_j1 CHILD clean_up_local_level_3_0
+PARENT  preprocess_j1 CHILD stage_out_local_local_0_0
+PARENT  clean_up_local_level_5_0 CHILD cleanup_blackdiamond_0_local
+PARENT  clean_up_local_level_6_0 CHILD cleanup_blackdiamond_0_local
+PARENT  create_dir_blackdiamond_0_local CHILD stage_in_remote_local_1_0
+PARENT  create_dir_blackdiamond_0_local CHILD stage_in_remote_local_0_0
+PARENT  findrange_j2 CHILD analyze_j4
+PARENT  findrange_j2 CHILD stage_out_local_local_1_0
+PARENT  findrange_j2 CHILD clean_up_local_level_4_0
+PARENT  analyze_j4 CHILD stage_out_local_local_2_0
+PARENT  analyze_j4 CHILD clean_up_local_level_5_0
+PARENT  findrange_j3 CHILD analyze_j4
+PARENT  findrange_j3 CHILD stage_out_local_local_1_0
+PARENT  findrange_j3 CHILD clean_up_local_level_4_0
+######################################################################
+# End of DAG
+######################################################################

@@ -1,0 +1,42 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : blackdiamond, Index = 0, Count = 1
+# SUBMIT FILE NAME : analyze_j4.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=1d9a836c-c1f0-4ba6-8205-62548ea1badf PEGASUS_WF_LABEL=blackdiamond PEGASUS_DAG_JOB_ID=analyze_j4 PEGASUS_SITE=local _PEGASUS_TRANSFER_INPUT_FILES=/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002/./findrange_j2.meta,/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002/./findrange_j3.meta,/usr/share/pegasus/sh/pegasus-lite-common.sh,/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002/pegasus-worker-4.9.0dev-x86_64_rhel_7.tar.gz, PEGASUS_BIN_DIR=/usr/bin"
+arguments = "/home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002/./analyze_j4.sh "
+copy_to_spool = false
+error = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./analyze_j4.err
+executable = /usr/share/pegasus/sh/pegasus-lite-local.sh
+getenv = True
+log = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002/blackdiamond-0.log
+notification = NEVER
+output = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./analyze_j4.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 43200)
+priority = 40
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+use_x509userproxy = True
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "1d9a836c-c1f0-4ba6-8205-62548ea1badf"
++pegasus_wf_uuid = "1d9a836c-c1f0-4ba6-8205-62548ea1badf"
++pegasus_version = "4.9.0dev"
++pegasus_wf_name = "blackdiamond-0"
++pegasus_wf_app = "ligo-pycbc"
++pegasus_wf_time = "20181023T170350-0400"
++pegasus_wf_xformation = "pegasus::analyze:4.0"
++pegasus_wf_dax_job_id = "j4"
++pegasus_wf_dag_job_id = "analyze_j4"
++pegasus_job_class = 1
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

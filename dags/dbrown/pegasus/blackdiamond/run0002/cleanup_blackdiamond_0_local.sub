@@ -1,0 +1,42 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : blackdiamond, Index = 0, Count = 1
+# SUBMIT FILE NAME : cleanup_blackdiamond_0_local.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=1d9a836c-c1f0-4ba6-8205-62548ea1badf PEGASUS_WF_LABEL=blackdiamond PEGASUS_DAG_JOB_ID=cleanup_blackdiamond_0_local PEGASUS_SITE=local X509_USER_PROXY_local=/tmp/x509up_u620"
+copy_to_spool = false
+error = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./cleanup_blackdiamond_0_local.err
+executable = /usr/bin/pegasus-transfer
+getenv = True
+input = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./cleanup_blackdiamond_0_local.in
+log = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002/blackdiamond-0.log
+notification = NEVER
+output = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./cleanup_blackdiamond_0_local.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 43200)
+priority = 1000
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+use_x509userproxy = True
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "1d9a836c-c1f0-4ba6-8205-62548ea1badf"
++pegasus_wf_uuid = "1d9a836c-c1f0-4ba6-8205-62548ea1badf"
++pegasus_version = "4.9.0dev"
++pegasus_wf_name = "blackdiamond-0"
++pegasus_wf_app = "ligo-pycbc"
++pegasus_wf_time = "20181023T170350-0400"
++pegasus_wf_xformation = "pegasus::cleanup"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "cleanup_blackdiamond_0_local"
++pegasus_job_class = 8
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

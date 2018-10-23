@@ -1,0 +1,27 @@
+user dbrown
+grid_dn null
+submit_hostname sugwg-osg.phy.syr.edu
+root_wf_uuid 1d9a836c-c1f0-4ba6-8205-62548ea1badf
+wf_uuid 1d9a836c-c1f0-4ba6-8205-62548ea1badf
+dax /home/dbrown/projects/osg/condor-blackdiamond-container/blackdiamond.dax
+dax_label blackdiamond
+dax_index 0
+dax_version 3.6
+pegasus_wf_name blackdiamond-0
+timestamp 20181023T170350-0400
+basedir /home/dbrown/projects/osg/condor-blackdiamond-container/dags
+submit_dir /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002
+planner /usr/bin/pegasus-plan
+planner_version 4.9.0dev
+pegasus_build 20181023192115Z
+planner_arguments "-vvv --conf pegasusrc --sites local,condorpool --staging-site local --output-site local --dir dags --dax blackdiamond.dax "
+jsd jobstate.log
+rundir run0002
+bindir /usr/bin
+vogroup pegasus
+uses_pmc false
+properties pegasus.4703812121105020714.properties
+condor_log blackdiamond-0.log
+dag blackdiamond-0.dag
+type dag
+notify blackdiamond-0.notify

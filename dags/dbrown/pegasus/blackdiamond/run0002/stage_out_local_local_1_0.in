@@ -1,0 +1,25 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "f.c1",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0002/./f.c1" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/f.c1" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "f.c2",
+   "id": 2,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0002/./f.c2" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/f.c2" }
+   ] }
+]

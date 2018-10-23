@@ -1,0 +1,24 @@
+{
+  "root_workflow_uuid": "1d9a836c-c1f0-4ba6-8205-62548ea1badf",
+  "workflow_uuid": "1d9a836c-c1f0-4ba6-8205-62548ea1badf",
+  "wf_metadata": {},
+  "graph": {
+    "jobs": {
+      "stage_in_remote_local_0_0": {},
+      "stage_out_local_local_2_0": {},
+      "stage_out_local_local_1_0": {},
+      "clean_up_local_level_3_0": {},
+      "stage_out_local_local_0_0": {},
+      "clean_up_local_level_4_0": {},
+      "preprocess_j1": {},
+      "clean_up_local_level_5_0": {},
+      "clean_up_local_level_6_0": {},
+      "stage_in_local_local_1_0": {},
+      "create_dir_blackdiamond_0_local": {},
+      "findrange_j2": {},
+      "analyze_j4": {},
+      "findrange_j3": {},
+      "cleanup_blackdiamond_0_local": {}
+    }
+  }
+}

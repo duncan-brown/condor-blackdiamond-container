@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "f.d",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0001/./f.d" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/f.d" }
+   ] }
+]

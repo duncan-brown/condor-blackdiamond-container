@@ -1,0 +1,43 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : blackdiamond, Index = 0, Count = 1
+# SUBMIT FILE NAME : stage_in_local_local_1_0.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=1d9a836c-c1f0-4ba6-8205-62548ea1badf PEGASUS_WF_LABEL=blackdiamond PEGASUS_DAG_JOB_ID=stage_in_local_local_1_0 PEGASUS_SITE=local PEGASUS_BIN_DIR=/usr/bin _PEGASUS_CONNECT_STDIN=true X509_USER_PROXY_local=/tmp/x509up_u620"
+arguments = "pegasus-kickstart  -n pegasus::transfer -N null -i - -R local  -L blackdiamond -T 2018-10-23T16:55:04-04:00 pegasus-transfer  --threads 2 "
+copy_to_spool = false
+error = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./stage_in_local_local_1_0.err
+executable = /usr/share/pegasus/sh/pegasus-lite-local.sh
+getenv = True
+input = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./stage_in_local_local_1_0.in
+log = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002/blackdiamond-0.log
+notification = NEVER
+output = /home/dbrown/projects/osg/condor-blackdiamond-container/dags/dbrown/pegasus/blackdiamond/run0002//./stage_in_local_local_1_0.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 43200)
+priority = 700
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+use_x509userproxy = True
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "1d9a836c-c1f0-4ba6-8205-62548ea1badf"
++pegasus_wf_uuid = "1d9a836c-c1f0-4ba6-8205-62548ea1badf"
++pegasus_version = "4.9.0dev"
++pegasus_wf_name = "blackdiamond-0"
++pegasus_wf_app = "ligo-pycbc"
++pegasus_wf_time = "20181023T170350-0400"
++pegasus_wf_xformation = "pegasus::transfer"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "stage_in_local_local_1_0"
++pegasus_job_class = 2
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "centos-pycbc",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "condorpool", "url": "file://localhost/cvmfs/singularity.opensciencegrid.org/pycbc/pycbc-el7:latest", "priority": 0 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "gsiftp://sugwg-condor.phy.syr.edu/home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0002/./centos-pycbc", "type": "singularity" }
+   ] }
+]

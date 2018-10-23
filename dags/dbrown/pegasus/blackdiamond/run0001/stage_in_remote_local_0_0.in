@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "f.a",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/dbrown/projects/osg/condor-blackdiamond-container/f.a", "priority": 0 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "symlink:///home/dbrown/projects/osg/condor-blackdiamond-container/local-site-scratch/dbrown/pegasus/blackdiamond/run0001/./f.a" }
+   ] }
+]
