@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# plan and submit the  workflow
+pegasus-plan -vvv \
+    --conf pegasusrc \
+    --sites local,condorpool \
+    --staging-site local \
+    --output-site local \
+    --dir dags \
+    --dax blackdiamond.dax
