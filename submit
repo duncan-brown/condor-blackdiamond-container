@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # plan and submit the  workflow
-pegasus-plan -vvv \
+pegasus-plan \
+    -Dpegasus.catalog.transformation.file=${1} \
+    -vvv \
     --conf pegasusrc \
     --sites local,condorpool \
     --staging-site local \
